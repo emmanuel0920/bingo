@@ -1,0 +1,5 @@
+2018-10-04 16:10:18Error: No se pudo conectar a MySQL.
+
+errno de depuración: 1045
+
+error de depuración: Access denied for user 'root'@'localhost' (using password: NO)

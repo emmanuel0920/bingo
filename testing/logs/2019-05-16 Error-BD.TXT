@@ -1,0 +1,390 @@
+2019-05-16 18:05:05Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:12Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:13Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:13Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:14Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:14Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:15Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:21Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:27Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:32Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:52Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:54Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:02Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:09Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:09Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:16Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:31Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:36Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:53Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:00Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:04Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:24Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:40Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:43Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:47Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:52Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:58Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:58Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:41Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:42Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:48Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:49Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:50Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:57Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:03Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:10Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:12Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:13Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:13Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:15Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:20Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:35Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 18:05:51Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory
+2019-05-16 20:05:37Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:37Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:40Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:42Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:44Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:44Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:05Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:12Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:13Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:13Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:17Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:21Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:28Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:35Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:35Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:36Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:36Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:40Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:44Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:54Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:57Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:00Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:24Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:27Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:42Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:52Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:04Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:28Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:30Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:43Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:13Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:16Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:23Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:36Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused
+2019-05-16 20:05:18Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: Connection refused

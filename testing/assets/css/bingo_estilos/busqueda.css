@@ -1,0 +1,119 @@
+@media only screen and (max-width: 735.99px){
+	.ico_hid{
+		display: none !important;
+	}
+}
+
+
+@media only screen and (max-width: 560.99px){
+	.dataTable > thead > tr > th[class*="sort"]::after {
+		display: none;
+	}
+}
+
+
+
+
+@media only screen and (max-width: 915.99px){
+	#dynamic-table_paginate, #dynamic-table_info, #dynamic-table2_paginate, #dynamic-table2_info, #dynamic-table3_paginate, #dynamic-table3_info{
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 1173.99px){
+	.hid_1{
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width: 820.99px){
+	.hid_2{
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width: 763.99px){
+	.hid_3{
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width: 499.99px){
+	.hid_4{
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width: 449.99px){
+	.hid_5{
+		display: none !important;
+	}
+}
+
+@media only screen and (min-width: 822px){
+	.inf_btn{
+		display: none !important;
+	}
+}
+
+@media only screen and (min-width: 448px) and (max-width: 639.99px){
+	.hid{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 447.99px){
+	.hid_xs{
+		display: none;
+	}
+}
+
+.hid_all{
+	display: none;
+}
+
+.table-header{
+	background-color: #B6BCC0 !important; 
+}
+
+@media only screen and (max-width: 545.99px){
+	.col_hid{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 531.99px){
+	.tab_hid{
+		display: none;
+	}
+	.col_hidd{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 343.99px){
+	.col_hiddd{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 411.99px){
+	.brk_ln{
+		display: block !important;
+		text-align: center !important;
+	}
+	.ali_gn{
+		float: none !important;
+	}
+}
+
+.dataTables_filter input[type="search"], .dataTables_filter input[type="text"]{
+	width: 70% !important;
+}
+
+@media only screen and (max-width: 767.99px){
+	.dataTables_filter{
+		text-align: left !important;
+	}
+	
+}

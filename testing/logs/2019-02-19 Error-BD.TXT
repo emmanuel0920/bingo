@@ -1,0 +1,5 @@
+2019-02-19 17:02:16Error: No se pudo conectar a MySQL.
+
+errno de depuración: 2002
+
+error de depuración: No such file or directory

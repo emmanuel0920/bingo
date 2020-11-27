@@ -1,0 +1,5 @@
+2019-03-29 06:03:17Error: No se pudo conectar a MySQL.
+
+errno de depuración: 1045
+
+error de depuración: Access denied for user 'joseapp_juegos'@'localhost' (using password: YES)

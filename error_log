@@ -1,0 +1,83 @@
+[04-Oct-2018 16:03:18 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/joseapp/bingo.jesusdevelopment.com/controller/conexion.php on line 7
+[19-Feb-2019 17:35:16 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/bingo.jesusdevelopment.com/controller/conexion.php on line 7
+[16-May-2019 18:11:05 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:11:12 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:11:13 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:11:13 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:11:14 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:11:14 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:11:15 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:11:21 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:11:27 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:11:32 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:11:52 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:11:54 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:12:02 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:12:09 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:12:09 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:12:16 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:12:31 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:12:36 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:12:53 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:13:00 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:13:04 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:13:24 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:13:40 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:13:43 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:13:47 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:13:52 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:13:58 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:13:58 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:14:41 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:14:42 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:14:48 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:14:49 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:14:50 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:14:57 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:15:03 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:15:10 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:15:12 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:15:13 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:15:13 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:15:15 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:15:20 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:15:35 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 18:17:51 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:07:37 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:07:37 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:07:40 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:07:42 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:07:44 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:07:44 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:08:05 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:08:12 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:08:13 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:08:13 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:08:17 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:08:21 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:08:28 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:08:34 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:08:35 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:08:36 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:08:36 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:08:40 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:08:44 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:08:54 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:08:57 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:09:00 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:11:24 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:11:27 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:11:42 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:11:52 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:12:04 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:12:28 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:12:30 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:12:43 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:13:13 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:13:16 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:13:23 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:13:36 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[16-May-2019 20:14:18 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/joseapp/public_html/jesusdevelopment.com/bingo/controller/conexion.php on line 7
+[31-May-2019 17:16:43 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/joseapp/public_html/bingojd.com/controller/conexion.php on line 7
+[15-Apr-2020 22:37:06 UTC] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/joseapp/public_html/bingojd.com/controller/conexion.php on line 11
+[16-May-2020 02:22:46 UTC] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/joseapp/public_html/bingojd.com/controller/conexion.php on line 11

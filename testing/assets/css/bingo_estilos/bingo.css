@@ -1,0 +1,33 @@
+@media only screen and (max-width: 547.99px){
+	.xxx{
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width: 413.99px){
+	.min_w{
+		min-width: 371px !important;
+	}
+}
+
+.navbar-fixed-top + .main-container {
+	padding-top: 45px !important;
+}
+
+@media only screen and (max-width: 441.99px){
+	.nin{
+		width: 85%;
+	}
+}
+
+.navbar-brand{
+	float: none !important;
+}
+
+.ace-nav > li.light-blue > a {
+	background-color: #B6BCC0 !important;	
+}
+
+.skin-3 .navbar .navbar-toggle, .skin-3 .navbar .navbar-toggle:focus {
+	background-color: #B6BCC0 !important;
+}
