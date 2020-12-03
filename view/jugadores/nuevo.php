@@ -13,7 +13,9 @@
     $a_maternos = fill_a_materno($nombres_direcciones);
     $calles = fill_calle($nombres_direcciones);
     $colonias = fill_colonia($nombres_direcciones);
-    $c_ps = fill_c_p($nombres_direcciones);
+    //$movilizadores = fill_colonia($nombres_direcciones);
+
+    //$c_ps = fill_c_p($nombres_direcciones);
     user_login();
 ?>
 
@@ -209,11 +211,13 @@
     					<div class="col-md-4">
     								<div class="form-group">
     								   <label class="col-md-5 control-label">Movilizador<FONT COLOR="red">*</FONT></label>
-    								    <div class="col-md-7 inputGroupContainer">
+    								    <div class="col-md-5 inputGroupContainer">
     										<div class="input-group">
-    											<input  name="movilizador" id="movilizador" placeholder="Movilizador" class="form-control" type="text"  >
-
-    											<span class="input-group-addon"><i class="fa fa-user"></i></span>
+    											<select name="movilizador" id="movilizador" class="chosen-select form-control" type="text" required>
+                                                <option value="">Selecciona una Opción</option>
+                                                    <?php echo $select_movilizador;?>
+                                            </select>
+                                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
     										</div>
     									</div>
     								</div>
@@ -719,11 +723,7 @@
 	    });
 
 
-	   /* var tags_cp = [<?php echo $c_ps; ?>];
-
-	    $( "#cp" ).autocomplete({
-	      source: tags_cp
-	    });*/
+       
 
 
 

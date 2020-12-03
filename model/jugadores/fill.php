@@ -7,10 +7,11 @@ function fill_movilizador()
     $select_movilizador='[';
     foreach($movilizadores as $movilizador)
     {
-        $select_movilizador.= "'".$movilizador['id'].'-'.$movilizador['nombre']."',";
+        $select_movilizador.='
+                <option value="'.$movilizador['id'].'">'.$movilizador['nombre'].'</option>
+        ';
     }
-    $select_movilizador.="]";
-    $select_movilizador = str_replace(',]', ']', $select_movilizador);
+    
     return $select_movilizador;
 }
 
