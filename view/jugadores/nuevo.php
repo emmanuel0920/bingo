@@ -37,7 +37,7 @@
 </div>
 
 <div class="page-content">
-	
+
 
 	<div class="page-header">
 		<h1>Jugadores
@@ -46,7 +46,7 @@
 				Registro de Jugadores
 			</small>
 		</h1>
-		
+
 	</div><!-- /.page-header -->
 
 	<div class="row">
@@ -55,12 +55,12 @@
 			    <div id="carga_editar">
 				<form class="form-horizontal" method="post"  id="form_jugadores">
 					<!-- Text input-->
-                    
+
     					<div class="row">
-    						
+
     						<div class="col-md-4">
     							<div class="form-group">
-    							   <label class="col-md-5 control-label">Apellido Paterno<FONT COLOR="red">*</FONT></label>  
+    							   <label class="col-md-5 control-label">Apellido Paterno<FONT COLOR="red">*</FONT></label>
     							    <div class="col-md-7 inputGroupContainer">
     									<div class="input-group">
     										<input  name="a_paterno" id="a_paterno" placeholder="Apellido Paterno" class="form-control" type="text"  />
@@ -69,22 +69,22 @@
     								</div>
     							</div>
     						</div>
-    						
+
     						<div class="col-md-4">
     							<div class="form-group">
-    							   <label class="col-md-5 control-label">Apellido Materno</label>  
+    							   <label class="col-md-5 control-label">Apellido Materno</label>
     							    <div class="col-md-7 inputGroupContainer">
     									<div class="input-group">
     										<input  name="a_materno" id="a_materno" placeholder="Apellido Materno" class="form-control" type="text" onchange="buscar_jugador_apellidos()" />
     										<span class="input-group-addon"><i class="fa fa-user"></i></span>
     									</div>
     								</div>
-    							</div>	
+    							</div>
     						</div>
-    
+
     						<div class="col-md-4">
     							<div class="form-group">
-    							   <label class="col-md-5 control-label">Nombre<FONT COLOR="red">*</FONT></label>  
+    							   <label class="col-md-5 control-label">Nombre<FONT COLOR="red">*</FONT></label>
     							    <div class="col-md-7 inputGroupContainer">
     									<div class="input-group">
     										<input  name="nombre_jugador" id="nombre_jugador" placeholder="Nombre" class="form-control" type="text"   onchange="buscar_jugador()" />
@@ -93,65 +93,65 @@
     								</div>
     							</div>
     						</div>
-    
+
     					</div>
-    					
+
     					<div id="carga_selects">
         					<div class="row">
         						<div class="col-md-4">
         							<div class="form-group">
-        							   <label class="col-md-5 control-label">Calle<FONT COLOR="red">*</FONT></label>  
+        							   <label class="col-md-5 control-label">Calle<FONT COLOR="red">*</FONT></label>
         							    <div class="col-md-7 inputGroupContainer">
         									<div class="input-group">
         										<input name="calle" id="calle" placeholder="Calle" class="form-control" type="text"  >
         										<span class="input-group-addon"><i class="fa fa-road"></i></span>
         									</div>
         								</div>
-        							</div>							
+        							</div>
         						</div>
-        
+
         						<div class="col-md-4">
         							<div class="form-group">
-        							   <label class="col-md-5 control-label">Número<FONT COLOR="red">*</FONT></label>  
+        							   <label class="col-md-5 control-label">Número<FONT COLOR="red">*</FONT></label>
         							    <div class="col-md-7 inputGroupContainer">
         									<div class="input-group">
         										<input name="numero" id="numero" placeholder="Número" class="form-control" type="number"  >
         										<span class="input-group-addon"><i class="fa fa-hashtag"></i></span>
         									</div>
         								</div>
-        							</div>							
+        							</div>
         						</div>
-        
+
         						<div class="col-md-4">
         							<div class="form-group">
-        							   <label class="col-md-5 control-label">Colonia<FONT COLOR="red">*</FONT></label>  
+        							   <label class="col-md-5 control-label">Colonia<FONT COLOR="red">*</FONT></label>
         							    <div class="col-md-7 inputGroupContainer">
         									<div class="input-group">
         										<input name="colonia" id="colonia" placeholder="Colonia" class="form-control" type="text"  >
         										<span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
         									</div>
         								</div>
-        							</div>							
+        							</div>
         						</div>
-        
-        					</div>	
-        
+
+        					</div>
+
         					<div class="row">
         						<div class="col-md-4">
         							<div class="form-group">
-        							   <label class="col-md-5 control-label">Código Postal<FONT COLOR="red">*</FONT></label>  
+        							   <label class="col-md-5 control-label">Código Postal<FONT COLOR="red">*</FONT></label>
         							    <div class="col-md-7 inputGroupContainer">
         									<div class="input-group">
         										<input name="cp" id="cp" placeholder="Código Postal" class="form-control" type="text"  onchange="compare_jugador()" >
         										<span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
         									</div>
         								</div>
-        							</div>							
-        						</div>						
-        
+        							</div>
+        						</div>
+
         						<div class="col-md-4">
         							<div class="form-group">
-        							   <label class="col-md-5 control-label">Teléfono<FONT COLOR="red">*</FONT></label>  
+        							   <label class="col-md-5 control-label">Teléfono<FONT COLOR="red">*</FONT></label>
         							    <div class="col-md-7 inputGroupContainer">
         									<div class="input-group">
         										<input  name="telefono" id="telefono" placeholder="Teléfono" class="form-control" type="number"  onfocus="compare_jugador()" />
@@ -159,28 +159,28 @@
         									</div>
         								</div>
         							</div>
-        							
+
         						</div>
-        						
+
         						<div class="col-md-4">
         							<div class="form-group">
-        							   <label class="col-md-5 control-label">Sección<FONT COLOR="red">*</FONT></label>  
+        							   <label class="col-md-5 control-label">Sección<FONT COLOR="red">*</FONT></label>
         							    <div class="col-md-7 inputGroupContainer">
         									<div class="input-group">
         										<input  name="seccion" id="seccion" placeholder="Sección" class="form-control" type="text"   />
         										<span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
         									</div>
         								</div>
-        							</div>	
+        							</div>
         						</div>
-        
+
         					</div>
     					</div>
     					<div class="row">
-    
+
     						<div class="col-md-4">
     							<div class="form-group">
-    							   <label class="col-md-5 control-label">Edad</label>  
+    							   <label class="col-md-5 control-label">Edad</label>
     							    <div class="col-md-7 inputGroupContainer">
     									<div class="input-group">
     										<input name="edad_jugador" id="edad_jugador" placeholder="Edad" class="form-control" type="number" onchange="date_calculator()">
@@ -188,62 +188,62 @@
     									</div>
     								</div>
     							</div>
-    							
+
     						</div>
-    
+
     						<div class="col-md-4">
     							<div class="form-group">
-    							   <label class="col-md-5 control-label">Fecha de Nacimiento</label>  
+    							   <label class="col-md-5 control-label">Fecha de Nacimiento</label>
     							    <div class="col-md-7 inputGroupContainer">
-    
+
     									<div class="input-group date" data-provide="datepicker">
     									    <input type="text" class="form-control mask_fecha" name="fecha_nacimiento" id="fecha_nacimiento" placeholder="aaaa/mm/dd" onchange="age_calculator()">
     									    <span class="input-group-addon"><i class="ace-icon fa fa-calendar"></i></span>
     									</div>
-    
+
     								</div>
     							</div>
-    							
+
     						</div>
-    
+
     					<div class="col-md-4">
     								<div class="form-group">
-    								   <label class="col-md-5 control-label">Movilizador<FONT COLOR="red">*</FONT></label>  
+    								   <label class="col-md-5 control-label">Movilizador<FONT COLOR="red">*</FONT></label>
     								    <div class="col-md-7 inputGroupContainer">
     										<div class="input-group">
     											<input  name="movilizador" id="movilizador" placeholder="Movilizador" class="form-control" type="text"  >
-    												
+
     											<span class="input-group-addon"><i class="fa fa-user"></i></span>
     										</div>
     									</div>
     								</div>
-    								
+
     							</div>
-    
-    
-    						
+
+
+
     					</div>
-    
+
     					<div class="row">
-    
+
     						<div class="col-md-4">
     							<div class="form-group">
-    							   <label class="col-md-5 control-label">Seccional<FONT COLOR="red">*</FONT></label>  
+    							   <label class="col-md-5 control-label">Seccional<FONT COLOR="red">*</FONT></label>
     							    <div class="col-md-4 inputGroupContainer">
     									<div class="input-group">
-    											<select name="seccional" id="seccional" placeholder="Seccional" class="chosen-select form-control" type="text" required>
-    												<option value="1">Selecciona una Opción</option>
-    													<?php echo $select_seccional;?>
-    											</select>
-    											<span class="input-group-addon"><i class="fa fa-user"></i></span>
-    										</div>
+											<select name="seccional" id="seccional" class="chosen-select form-control" type="text" required>
+												<option value="">Selecciona una Opción</option>
+													<?php echo $select_seccional;?>
+											</select>
+											<span class="input-group-addon"><i class="fa fa-user"></i></span>
+    									</div>
     								</div>
     							</div>
     						</div>
-    						
+
     						<div class="col-md-4">
     							<div class="form-group">
-    							   <label class="col-md-5 control-label">Zonal<FONT COLOR="red">*</FONT></label>  
+    							   <label class="col-md-5 control-label">Zonal<FONT COLOR="red">*</FONT></label>
     							    <div class="col-md-7 inputGroupContainer">
     									<div class="input-group">
     										<select  name="zonal" id="zonal" placeholder="Zonal" class="form-control" type="text" required>
@@ -255,10 +255,10 @@
     								</div>
     							</div>
     						</div>
-    						
+
     						<div class="col-md-4">
     							<div class="form-group">
-    							   <label class="col-md-5 control-label">¿Votó?<FONT COLOR="red">*</FONT></label>  
+    							   <label class="col-md-5 control-label">¿Votó?<FONT COLOR="red">*</FONT></label>
     							    <div class="col-md-7 inputGroupContainer">
     									<div class="input-group">
     										<div class="radio">
@@ -273,17 +273,63 @@
     								</div>
     							</div>
     						</div>
-    
+
+
     						<input id="año_actual" type="hidden">
     						<input id="mes_actual" type="hidden">
     						<input id="dia_actual" type="hidden">
-    
+
     					</div>
-    					
+
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                   <label class="col-md-5 control-label">¿A quién?</label>
+                                    <div class="col-md-7 inputGroupContainer">
+                                        <div class="input-group">
+                                            <input name="a_quien" id="a_quien" placeholder="A quién" class="form-control" type="text">
+                                            <span class="input-group-addon"><i class="fa fa-flag"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                   <label class="col-md-5 control-label">Porcentaje</label>
+                                    <div class="col-md-7 inputGroupContainer">
+                                        <div class="input-group">
+                                            <input name="porcen" id="porcen" placeholder="Porcentaje" class="form-control" type="number" min="0" max="100" >
+                                            <span class="input-group-addon"><i class="fa fa-percent"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                   <label class="col-md-5 control-label">¿Hacer Movilizador?</label>
+                                    <div class="col-md-7 inputGroupContainer">
+                                        <div class="input-group">
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="make_mov" id="make_mov" value="1" /> Si
+                                                </label>
+                                                <label>
+                                                    <input type="radio" name="make_mov" id="make_mov" value="0"> No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
     					<div class="row">
     						<div class="col-md-8">
     							<div class="form-group">
-    							   <label class="col-md-6 control-label">Observaciones<FONT COLOR="red">*</FONT></label>  
+    							   <label class="col-md-6 control-label">Observaciones<FONT COLOR="red">*</FONT></label>
     							    <div class="col-md-6 inputGroupContainer">
     									<div class="input-group">
     										<textarea name="observaciones" id="observaciones" placeholder="Observaciones" class="form-control" ></textarea>
@@ -293,32 +339,32 @@
     							</div>
     						</div>
     					</div>
-    					
-						
+
+
     					<!-- Button -->
     					<div class="form-group">
     						<div class="col-xs-12 center">
     							<button type="submit" class="btn btn-success"><i class="ace-icon fa fa-floppy-o"></i>Guardar</button>
     						</div>
     					</div>
-    				
+
 				</form>
 				</div>
-				
+
 				<div id="carga_tabla"></div>
 
 			<!-- PAGE CONTENT ENDS -->
 		</div><!-- /.col -->
 	</div><!-- /.row -->
 </div><!-- /.page-content -->
-				
+
 <script>
 
 	function mensaje_error(){
 		swal({
 		  text: "¡No existe en el padrón, se debe cargar manualmente",
 		  icon: "warning",
-		  confirmButtonText: "Aceptar"
+		  button: "Aceptar"
 		});
 	}
 
@@ -337,13 +383,13 @@
 			  title: "¡Error!",
 			  text: "¡Favor de llenar los datos obligatorios!",
 			  icon: "warning",
-			  confirmButtonText: "Aceptar"
+			  button: "Aceptar"
 			});
 
 		}else{
 
 
-			var parametros = {		               
+			var parametros = {
 				"a_paterno" : a_pat,
 				"a_materno" : $('#a_materno').val(),
 				"nombre" : nom,
@@ -354,24 +400,24 @@
 			};
 
 
-				
-				
+
+
 			$.ajax({
 					data:  parametros,
 					url:   './model/jugadores/compare_jugador.php',
 					type:  'post',
-					
+
 					success:  function (data) {
 						if (data==='correcto'){
-							
+
 						}
-						
+
 						if (data==='error2'){
 							swal({
 							  title: "¡Error!",
 							  text: "¡Ya existe éste jugador!",
 							  icon: "error",
-							  confirmButtonText: "Aceptar"
+							  button: "Aceptar"
 							});
 
 							$("#form_jugadores")[0].reset();
@@ -406,15 +452,15 @@
 	            // code for IE7+, Firefox, Chrome, Opera, Safari
 	            xmlhttp=new XMLHttpRequest();
 	        }
-	        
+
 	        else{// code for IE6, IE5
 	            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 	        }
 
 	        xmlhttp.onreadystatechange=function(){
-	            
+
 	            if (xmlhttp.readyState==4 && xmlhttp.status==200){
-	                
+
 	                var cargado = xmlhttp.responseText;
 
 	                if (cargado != "error"){
@@ -424,7 +470,7 @@
 		            	mensaje_error();
 		            	waitingDialog.hide();
 		            }
-	                
+
 	            }
 	        }
 
@@ -433,12 +479,12 @@
 	        waitingDialog.show('Buscando en el padrón', {dialogSize: 'sm', progressType: 'warning'})
 	        xmlhttp.open("POST","./model/jugadores/buscar_jugador.php",true);
 	        xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-	        xmlhttp.send(datos);			
-				
-			
+	        xmlhttp.send(datos);
+
+
 		}
 	}
-	
+
 	function buscar_jugador_apellidos(){
 
 		var a_pat = $('#a_paterno').val();
@@ -461,15 +507,15 @@
 	            // code for IE7+, Firefox, Chrome, Opera, Safari
 	            xmlhttp=new XMLHttpRequest();
 	        }
-	        
+
 	        else{// code for IE6, IE5
 	            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 	        }
 
 	        xmlhttp.onreadystatechange=function(){
-	            
+
 	            if (xmlhttp.readyState==4 && xmlhttp.status==200){
-	                
+
 	                var cargado = xmlhttp.responseText;
 
 	                if (cargado != "error"){
@@ -478,7 +524,7 @@
 		            } else {
 		            	waitingDialog.hide();
 		            }
-	                
+
 	            }
 	        }
 
@@ -487,12 +533,12 @@
 	        waitingDialog.show('Buscando en el padrón', {dialogSize: 'sm', progressType: 'warning'})
 	        xmlhttp.open("POST","./model/jugadores/buscar_tabla.php",true);
 	        xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-	        xmlhttp.send(datos);			
-				
-			
+	        xmlhttp.send(datos);
+
+
 		}
 	}
-	
+
 	function buscar_jugador_editar(id){
 
 		var xmlhttp;
@@ -501,15 +547,15 @@
 	            // code for IE7+, Firefox, Chrome, Opera, Safari
 	            xmlhttp=new XMLHttpRequest();
 	        }
-	        
+
 	        else{// code for IE6, IE5
 	            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 	        }
 
 	        xmlhttp.onreadystatechange=function(){
-	            
+
 	            if (xmlhttp.readyState==4 && xmlhttp.status==200){
-	                
+
 	                var cargado = xmlhttp.responseText;
 
 	                if (cargado != "error"){
@@ -519,7 +565,7 @@
 		            } else {
 		            	waitingDialog.hide();
 		            }
-	                
+
 	            }
 	        }
 
@@ -532,11 +578,11 @@
 	}
 
 	function date_calculator(){
-		
+
 		var input_edad = document.getElementById('edad_jugador').value;
 
 		var fecha_actual = new Date();
-		
+
 		var año_actual = document.getElementById('año_actual').value = fecha_actual.getFullYear();
 		var mes_actual = document.getElementById('mes_actual').value = fecha_actual.getMonth()+1;
 		var dia_actual = document.getElementById('año_actual').value = fecha_actual.getDate();
@@ -544,26 +590,26 @@
 		var digito = mes_actual.toString().length;
 
 		var año_nacimiento = año_actual - input_edad;
-		
+
 		if (digito == 1 ) {
 			var fecha_nacimiento = document.getElementById('fecha_nacimiento').value =  año_nacimiento + "/" + 0 + mes_actual + "/" + dia_actual;
 
 		}else{
-			var fecha_nacimiento = document.getElementById('fecha_nacimiento').value =  año_nacimiento + "/" + mes_actual + "/" + dia_actual;			
-		}		
+			var fecha_nacimiento = document.getElementById('fecha_nacimiento').value =  año_nacimiento + "/" + mes_actual + "/" + dia_actual;
+		}
 
 	}
-	
+
 	function age_calculator(){
 
 		var input_nacimiento = document.getElementById('fecha_nacimiento').value;
 
 		var partes = input_nacimiento.split('/');
-		
+
 		var año = partes[0];
 		var mes = partes[1];
 		var dia = partes[2];
-		
+
 		var fecha_actual = new Date();
 
 		var año_actual = document.getElementById('año_actual').value = fecha_actual.getFullYear();
@@ -575,7 +621,7 @@
 		var edad_dia = dia_actual - dia;
 
 		if(año_actual > año){
-			
+
 			if(mes_actual < mes){
 				$('#edad_jugador').val(edad_año-1);
 			}
@@ -606,7 +652,7 @@
 		//TERMINA FORMATO DE LA FECHA
 
 		if(!ace.vars['touch']) {
-			$('.chosen-select').chosen({allow_single_deselect:true}); 
+			$('.chosen-select').chosen({allow_single_deselect:true});
 			//resize the chosen on window resize
 
 			$(window)
@@ -646,35 +692,35 @@
 
 
 	    var tags_materno = [<?php echo $a_maternos; ?>];
-	    
+
 	    $( "#a_materno" ).autocomplete({
 	      source: tags_materno
 	    });
 
 
 	    var tags_nombre = [<?php echo $nombres; ?>];
-	    
+
 	    $( "#nombre_jugador" ).autocomplete({
 	      source: tags_nombre
 	    });
 
 
 	    var tags_calle = [<?php echo $calles; ?>];
-	    
+
 	    $( "#calle" ).autocomplete({
 	      source: tags_calle
 	    });
 
 
 	    var tags_colonia = [<?php echo $colonias; ?>];
-	    
+
 	    $( "#colonia" ).autocomplete({
 	      source: tags_colonia
 	    });
 
 
 	   /* var tags_cp = [<?php echo $c_ps; ?>];
-	    
+
 	    $( "#cp" ).autocomplete({
 	      source: tags_cp
 	    });*/
@@ -695,9 +741,13 @@
 
 			nombre_jugador: {
 				required: true
-			}
+			},
 
-			
+            porcen: {
+                min: 0,
+                max: 100
+            }
+
 		},
 
 		messages: {
@@ -707,8 +757,13 @@
 
 			nombre_jugador: {
 				required: "Campo obligatorio."
-			}
-			
+			},
+
+            porcen: {
+                min: "El valor mínimo es 0",
+                max: "El valor máximo es 100"
+            }
+
 		},
 
 
@@ -737,7 +792,7 @@
 		},
 
 		submitHandler: function (form) {
-			var parametros = {		               
+			var parametros = {
 				"a_paterno" : $('#a_paterno').val(),
 				"a_materno" : $('#a_materno').val(),
 				"nombre" : $('#nombre_jugador').val(),
@@ -753,15 +808,18 @@
 				"id_seccional" : $('#seccional').val(),
 				"id_zonal" : $('#zonal').val(),
 				"voto" : $('#voto:checked').val(),
+                "a_quien" : $('#a_quien').val(),
+                "porcen" : $('#porcen').val(),
+                "make_mov" : $('#make_mov:checked').val(),
 				"observaciones" : $('#observaciones').val(),
 			};
-			
-			
+
+
 			$.ajax({
 					data:  parametros,
 					url:   './model/jugadores/create_jugador.php',
 					type:  'post',
-					
+
 					success:  function (data) {
 							if (data==='correcto'){
 								swal({
@@ -772,32 +830,32 @@
 								});
 								cambiarcont('view/jugadores/nuevo.php');
 							}
-							
+
 							if (data==='error2'){
 								swal({
 								  title: "¡Error!",
 								  text: "¡Ocurrio algo al guardar!",
 								  timer: 3000,
 								  type: "error",
-								  confirmButtonText: "Aceptar"
+								  button: "Aceptar"
 								});
 							}
-							
+
 							if (data==='error'){
 								swal({
 								  title: "¡Error!",
 								  text: "¡Este jugador ya registró con anterioridad!",
 								  timer: 3000,
 								  type: "warning",
-								  confirmButtonText: "Aceptar"
+								  button: "Aceptar"
 								});
 							}
 					}
 			});
 		}
-	
+
 	});
-	
+
     	function validate_form(){
     	$('#form_edit_jugadores').validate({
     	    errorElement: 'div',
@@ -808,35 +866,35 @@
     			a_paterno: {
     				required: true
     			},
-    
+
     			nombre_jugador: {
     				required: true
     			}
-    
-    			
+
+
     		},
-    
+
     		messages: {
     			a_paterno: {
     				required: "Campo obligatorio."
     			},
-    
+
     			nombre_jugador: {
     				required: "Campo obligatorio."
     			}
-    			
+
     		},
-    
-    
+
+
     		highlight: function (e) {
     			$(e).closest('.form-group').removeClass('has-info').addClass('has-error');
     		},
-    
+
     		success: function (e) {
     			$(e).closest('.form-group').removeClass('has-error');//.addClass('has-info');
     			$(e).remove();
     		},
-    
+
     		errorPlacement: function (error, element) {
     			if(element.is('input[type=checkbox]') || element.is('input[type=radio]')) {
     				var controls = element.closest('div[class*="col-"]');
@@ -851,9 +909,9 @@
     			}
     			else error.insertAfter(element.parent());
     		},
-    
+
     		submitHandler: function (form) {
-    			var parametros = {		               
+    			var parametros = {
     				"a_paterno" : $('#a_paterno').val(),
     				"a_materno" : $('#a_materno').val(),
     				"nombre" : $('#nombre_jugador').val(),
@@ -872,13 +930,13 @@
     				"observaciones" : $('#observaciones').val(),
     				"id" : $('#id').val(),
     			};
-    			
-    			
+
+
     			$.ajax({
     					data:  parametros,
     					url:   './model/jugadores/edit_jugador.php',
     					type:  'post',
-    					
+
     					success:  function (data) {
     							if (data==='correcto'){
     								swal({
@@ -889,32 +947,32 @@
     								});
     								cambiarcont('view/jugadores/nuevo.php');
     							}
-    							
+
     							if (data==='error2'){
     								swal({
     								  title: "¡Error!",
     								  text: "¡Ocurrio algo al guardar!",
     								  timer: 3000,
     								  type: "error",
-    								  confirmButtonText: "Aceptar"
+    								  button: "Aceptar"
     								});
     							}
-    							
+
     							if (data==='error'){
     								swal({
     								  title: "¡Error!",
     								  text: "¡Este jugador ya registró con anterioridad!",
     								  timer: 3000,
     								  type: "warning",
-    								  confirmButtonText: "Aceptar"
+    								  button: "Aceptar"
     								});
     							}
     					}
     			});
     		}
-    	
+
     	});
 	}
 
 </script>
-				
+
