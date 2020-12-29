@@ -1029,7 +1029,11 @@
 
     $("#foto_id").change(function() {
       readURL(this);
-      $("#preview").css("display", "initial");
+      if (document.getElementById("foto_id").files.length == 0) {
+        $("#preview").css("display", "none");  
+      }else{
+        $("#preview").css("display", "initial");
+      }
     });
 
 </script>
