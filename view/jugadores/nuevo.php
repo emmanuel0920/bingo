@@ -21,6 +21,30 @@
 	div.datepicker.datepicker-dropdown.dropdown-menu{
 		z-index: 1030;
 	}
+
+    input[type="file"]#foto_id{
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+    }
+
+    label[for="foto_id"] {
+        font-size: 14px;
+        font-weight: 600;
+        color: #fff;
+        background-color: #106BA0;
+        display: inline-block;
+        transition: all .5s;
+        cursor: pointer;
+        padding: 15px 40px !important;
+        text-transform: uppercase;
+        width: fit-content;
+        text-align: center;
+    }
+
 </style>
 
 <div class="breadcrumbs ace-save-state breadcrumbs-fixed" id="breadcrumbs">
@@ -55,6 +79,17 @@
 			    <div id="carga_editar">
 				<form class="form-horizontal" method="post"  id="form_jugadores">
 					<!-- Text input-->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group" style="display: flex; justify-content: center;">
+                                    <label for="foto_id">
+                                        <i class="fa fa-camera bigger-150">&nbsp;Tomar Fotografía</i>
+                                    </label>
+                                   <input id="foto_id" class="center" type="file">
+                                </div>
+                            </div>                                
+                        </div>
 
     					<div class="row">
 
