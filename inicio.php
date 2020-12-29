@@ -112,7 +112,7 @@
 
 			
 
-			<div id="sidebar" class="sidebar                  responsive-min                    ace-save-state sidebar-fixed sidebar-scroll">
+			<div id="sidebar" class="sidebar responsive-min ace-save-state sidebar-fixed sidebar-scroll">
 				<script type="text/javascript">
 					try{ace.settings.loadState('sidebar')}catch(e){}
 				</script>
@@ -160,9 +160,7 @@
 
 									<b class="arrow"></b>
 								</li>							
-							</ul>
-
-							<ul class="submenu">
+								
 								<li class="">
 									<a href="javascript:cambiarcont('view/jugadores/nuevo.php');">
 										<i class="menu-icon fa fa-caret-right"></i>
@@ -171,9 +169,7 @@
 
 									<b class="arrow"></b>
 								</li>							
-							</ul>
-
-							<ul class="submenu">
+								
 								<li class="">
 									<a href="javascript:cambiarcont('view/jugadores/listado.php');">
 										<i class="menu-icon fa fa-caret-right"></i>
@@ -183,6 +179,7 @@
 									<b class="arrow"></b>
 								</li>							
 							</ul>
+
 						</li>
 
 						<li>
@@ -207,9 +204,7 @@
 
 									<b class="arrow"></b>
 								</li>							
-							</ul>
-
-							<ul class="submenu">
+								
 								<li class="">
 									<a href="javascript:cambiarcont('view/prep/reporte.php');">
 										<i class="menu-icon fa fa-caret-right"></i>
@@ -219,6 +214,7 @@
 									<b class="arrow"></b>
 								</li>							
 							</ul>
+
 						</li>
 
 
@@ -262,9 +258,7 @@
 
 									<b class="arrow"></b>
 								</li>							
-							</ul>
-
-							<ul class="submenu">
+								
 								<li class="">
 									<a href="javascript:cambiarcont('view/jugadores/nuevo.php');">
 										<i class="menu-icon fa fa-caret-right"></i>
@@ -273,9 +267,7 @@
 
 									<b class="arrow"></b>
 								</li>							
-							</ul>
-
-							<ul class="submenu">
+								
 								<li class="">
 									<a href="javascript:cambiarcont('view/jugadores/listado.php');">
 										<i class="menu-icon fa fa-caret-right"></i>
@@ -285,6 +277,7 @@
 									<b class="arrow"></b>
 								</li>							
 							</ul>
+
 						</li>
 
 						<li class="">
@@ -318,9 +311,7 @@
 
 									<b class="arrow"></b>
 								</li>							
-							</ul>
-
-							<ul class="submenu">
+								
 								<li class="">
 									<a href="javascript:cambiarcont('view/prep/reporte.php');">
 										<i class="menu-icon fa fa-caret-right"></i>
@@ -330,6 +321,7 @@
 									<b class="arrow"></b>
 								</li>							
 							</ul>
+
 						</li>
 
 					<?php } if($_SESSION['id_tipo_usuario']==3){ ?>
@@ -407,9 +399,7 @@
 
 									<b class="arrow"></b>
 								</li>							
-							</ul>
-
-							<ul class="submenu">
+								
 								<li class="">
 									<a href="javascript:cambiarcont('view/jugadores/nuevo.php');">
 										<i class="menu-icon fa fa-caret-right"></i>
@@ -418,9 +408,7 @@
 
 									<b class="arrow"></b>
 								</li>							
-							</ul>
-
-							<ul class="submenu">
+								
 								<li class="">
 									<a href="javascript:cambiarcont('view/jugadores/listado.php');">
 										<i class="menu-icon fa fa-caret-right"></i>
@@ -430,6 +418,7 @@
 									<b class="arrow"></b>
 								</li>							
 							</ul>
+
 						</li>
 					<?php } if($_SESSION['id_tipo_usuario']==7){ ?>
 
@@ -464,9 +453,7 @@
 
 									<b class="arrow"></b>
 								</li>							
-							</ul>
-
-							<ul class="submenu">
+								
 								<li class="">
 									<a href="javascript:cambiarcont('view/jugadores/nuevo.php');">
 										<i class="menu-icon fa fa-caret-right"></i>
@@ -475,9 +462,7 @@
 
 									<b class="arrow"></b>
 								</li>							
-							</ul>
-
-							<ul class="submenu">
+								
 								<li class="">
 									<a href="javascript:cambiarcont('view/jugadores/listado.php');">
 										<i class="menu-icon fa fa-caret-right"></i>
@@ -487,6 +472,7 @@
 									<b class="arrow"></b>
 								</li>							
 							</ul>
+
 						</li>
 						
 					<?php }?>
