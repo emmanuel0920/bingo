@@ -86,7 +86,7 @@
                                     <label for="foto_id">
                                         <i class="fa fa-camera bigger-150">&nbsp;Tomar Fotografía</i>
                                     </label>
-                                   <input id="foto_id" class="center" type="file">
+                                   <input id="foto_id" name="foto_id" class="center" type="file">
                                 </div>
                             </div>                                
                         </div>
