@@ -88,8 +88,12 @@
                                     </label>
                                    <input id="foto_id" name="foto_id" class="center" type="file" accept="image/*" capture="camera">
                                 </div>
+                                <div style="display: flex; justify-content: center;">
+                                   <img id="preview" src="#" width="150" height="100" style="display: none;">
+                                </div>
                             </div>                                
                         </div>
+                        <br>
 
     					<div class="row">
 
@@ -1008,6 +1012,25 @@
 
     	});
 	}
+
+    //PARA MOSTRAR LA VISTA PREVIA DE LA FOTO
+
+    function readURL(input) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        
+        reader.onload = function(e) {
+          $('#preview').attr('src', e.target.result);
+        }
+        
+        reader.readAsDataURL(input.files[0]); // convert to base64 string
+      }
+    }
+
+    $("#foto_id").change(function() {
+      readURL(this);
+      $("#preview").css("display", "initial");
+    });
 
 </script>
 
