@@ -69,6 +69,12 @@ $tr_jugadores = fill_tr_jugadores_usuario ($jugadores_capturista);
 
 <script type="text/javascript">
 
+	function form_checker(){
+		$("#form_update_jugador :input").change(function() {
+		  $("#btn_submit_update_jugador").prop("disabled", false);
+		});
+	}
+
 	$('#form_update_jugador').validate({
 		errorElement: 'div',
 		errorClass: 'help-block',
@@ -217,6 +223,7 @@ $tr_jugadores = fill_tr_jugadores_usuario ($jugadores_capturista);
                 //show_hide_modals();
                 waitingDialog.hide();
                 $('#modal_update_jugador').modal('show');
+                form_checker();
             }
         }
 
