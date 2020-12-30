@@ -314,7 +314,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>&nbsp;Cerrar</button>
-        <button type="submit" form="form_update_jugador" class="btn btn-success"><i class="fa fa-floppy-o"></i>&nbsp;Guardar</button>
+        <button type="submit" id="btn_submit_update_jugador" form="form_update_jugador" disabled class="btn btn-success"><i class="fa fa-floppy-o"></i>&nbsp;Guardar</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
