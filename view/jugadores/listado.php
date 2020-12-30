@@ -48,7 +48,8 @@ $tr_jugadores = fill_tr_jugadores_usuario ($jugadores_capturista);
 							<th>Calle</th>
 							<th>Número</th>
 							<th>Colonia</th>
-							<th>Fecha de Captura</th>
+							<!--<th>Fecha de Captura</th>-->
+							<th>Acciones</th>
 						</tr>
 					</thead>
 
@@ -63,7 +64,201 @@ $tr_jugadores = fill_tr_jugadores_usuario ($jugadores_capturista);
 	</div>
 </div>			
 
+<div id="load_modal_update_jugador"></div>
+<div id="load_modal_show_jugador_info"></div>
+
 <script type="text/javascript">
+
+	$('#form_update_jugador').validate({
+		errorElement: 'div',
+		errorClass: 'help-block',
+		focusInvalid: false,
+		ignore: "",
+		rules: {
+			a_paterno: {
+				required: true
+			},
+
+			nombre_jugador: {
+				required: true
+			},
+
+            porcen: {
+                min: 0,
+                max: 100
+            }
+
+		},
+
+		messages: {
+			a_paterno: {
+				required: "Campo obligatorio."
+			},
+
+			nombre_jugador: {
+				required: "Campo obligatorio."
+			},
+
+            porcen: {
+                min: "El valor mínimo es 0",
+                max: "El valor máximo es 100"
+            }
+
+		},
+
+
+		highlight: function (e) {
+			$(e).closest('.form-group').removeClass('has-info').addClass('has-error');
+		},
+
+		success: function (e) {
+			$(e).closest('.form-group').removeClass('has-error');//.addClass('has-info');
+			$(e).remove();
+		},
+
+		errorPlacement: function (error, element) {
+			if(element.is('input[type=checkbox]') || element.is('input[type=radio]')) {
+				var controls = element.closest('div[class*="col-"]');
+				if(controls.find(':checkbox,:radio').length > 1) controls.append(error);
+				else error.insertAfter(element.nextAll('.lbl:eq(0)').eq(0));
+			}
+			else if(element.is('.select2')) {
+				error.insertAfter(element.siblings('[class*="select2-container"]:eq(0)'));
+			}
+			else if(element.is('.chosen-select')) {
+				error.insertAfter(element.siblings('[class*="chosen-container"]:eq(0)'));
+			}
+			else error.insertAfter(element.parent());
+		},
+
+		submitHandler: function (form) {
+			var parametros = {
+				"a_paterno" : $('#a_paterno').val(),
+				"a_materno" : $('#a_materno').val(),
+				"nombre" : $('#nombre_jugador').val(),
+				"calle" : $('#calle').val(),
+				"numero" : $('#numero').val(),
+				"colonia" : $('#colonia').val(),
+				"cp" : $('#cp').val(),
+				"telefono" : $('#telefono').val(),
+				"seccion" : $('#seccion').val(),
+				"edad_jugador" : $('#edad_jugador').val(),
+				"fecha_nacimiento" : $('#fecha_nacimiento').val(),
+				"movilizador" : $('#movilizador').val(),/*NO SÉ SI ESTO ESTÉ BIEN*/
+				"id_seccional" : $('#seccional').val(),
+				"id_zonal" : $('#zonal').val(),
+				"voto" : $('#voto:checked').val(),
+                "a_quien" : $('#a_quien').val(),
+                "porcen" : $('#porcen').val(),
+                "make_mov" : $('#make_mov:checked').val(),
+				"observaciones" : $('#observaciones').val(),
+			};
+
+
+			$.ajax({
+					data:  parametros,
+					url:   './model/jugadores/edit_jugador.php',
+					type:  'post',
+
+					success:  function (data) {
+							if (data==='correcto'){
+								swal({
+								  title: "¡Datos guardados correctamente!",
+								  timer: 3000,
+								  icon: "success",
+								  button: "Aceptar"
+								});
+								cambiarcont('view/jugadores/listado.php');
+							}
+
+							if (data==='error2'){
+								swal({
+								  title: "¡Error!",
+								  text: "¡Ocurrio algo al guardar!",
+								  timer: 3000,
+								  type: "error",
+								  button: "Aceptar"
+								});
+							}
+
+							if (data==='error'){
+								swal({
+								  title: "¡Error!",
+								  text: "¡Este jugador ya registró con anterioridad!",
+								  timer: 3000,
+								  type: "warning",
+								  button: "Aceptar"
+								});
+							}
+					}
+			});
+		}
+
+	});
+
+	//JQUERY AJAX
+	function modal_update_jugador_foto(paterno, materno, nombre, calle, numero, colonia, cp, seccion, fecha_captura){
+        var xmlhttp;
+
+        if (window.XMLHttpRequest){
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp=new XMLHttpRequest();
+        }
+
+        else{// code for IE6, IE5
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        xmlhttp.onreadystatechange=function(){
+
+            if (xmlhttp.readyState==4 && xmlhttp.status==200){
+
+                document.getElementById("load_modal_update_jugador").innerHTML=xmlhttp.responseText;
+                //show_hide_modals();
+                waitingDialog.hide();
+                $('#modal_update_jugador').modal('show');
+            }
+        }
+
+        var datos_modal = "paterno="+paterno + "&materno="+materno + "&nombre="+nombre + "&calle="+calle + "&numero="+numero + "&colonia="+colonia + "&cp="+cp + "&seccion="+seccion + "&fecha_captura="+fecha_captura;
+
+        waitingDialog.show('Cargando Información', {dialogSize: 'sm', progressType: 'warning'})
+        xmlhttp.open("POST","./view/jugadores/modal_update_jugador.php",true);
+        xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        xmlhttp.send(datos_modal);
+    }
+
+    function modal_show_jugador_info(paterno, materno, nombre, calle, numero, colonia, cp, seccion, fecha_captura){
+        var xmlhttp;
+
+        if (window.XMLHttpRequest){
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp=new XMLHttpRequest();
+        }
+
+        else{// code for IE6, IE5
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        xmlhttp.onreadystatechange=function(){
+
+            if (xmlhttp.readyState==4 && xmlhttp.status==200){
+
+                document.getElementById("load_modal_show_jugador_info").innerHTML=xmlhttp.responseText;
+                //show_hide_modals();
+                waitingDialog.hide();
+                $('#modal_show_jugador_info').modal('show');
+            }
+        }
+
+        var datos_modal = "paterno="+paterno + "&materno="+materno + "&nombre="+nombre + "&calle="+calle + "&numero="+numero + "&colonia="+colonia + "&cp="+cp + "&seccion="+seccion + "&fecha_captura="+fecha_captura;
+
+        waitingDialog.show('Cargando Información', {dialogSize: 'sm', progressType: 'warning'})
+        xmlhttp.open("POST","./view/jugadores/modal_show_jugador_info.php",true);
+        xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        xmlhttp.send(datos_modal);
+    }
+
 
 	//initiate dataTables plugin
 		var myTable = 
