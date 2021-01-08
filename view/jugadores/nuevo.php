@@ -97,6 +97,22 @@
                         </div>
                         <br>
 
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                   <label class="col-md-5 control-label">Identificador<FONT COLOR="red">*</FONT></label>
+                                    <div class="col-md-7 inputGroupContainer">
+                                        <div class="input-group">
+                                            <input name="identificador" id="identificador" placeholder="Identificador" class="form-control" type="text"  />
+                                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
     					<div class="row">
 
     						<div class="col-md-4">
@@ -832,6 +848,7 @@
 
 		submitHandler: function (form) {
 			var parametros = {
+                "identificador" : $("#identificador").val();
 				"a_paterno" : $('#a_paterno').val(),
 				"a_materno" : $('#a_materno').val(),
 				"nombre" : $('#nombre_jugador').val(),
