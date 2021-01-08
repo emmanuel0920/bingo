@@ -45,11 +45,11 @@ function get_jugadores_capturista($id_capturista)
 	return $result;
 }
 
-function compare_jugadores($nombre, $a_paterno, $a_materno, $calle, $colonia, $c_p)
+function compare_jugadores($nombre, $a_paterno, $a_materno, $calle, $colonia, $c_p, $identificador)
 {
     $sql="SELECT id
             FROM jugadores
-          WHERE nombre ='".$nombre."' AND a_paterno ='".$a_paterno."' AND a_materno = '".$a_materno."' AND calle = '".$calle."' AND colonia = '".$colonia."' AND c_p = '".$c_p."'";
+          WHERE nombre ='".$nombre."' AND a_paterno ='".$a_paterno."' AND a_materno = '".$a_materno."' AND calle = '".$calle."' AND colonia = '".$colonia."' AND c_p = '".$c_p."' OR identificador = '".$identificador."'";
 
     $result = total_rows($sql);
 
