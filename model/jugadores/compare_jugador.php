@@ -7,11 +7,12 @@
 	$calle = $_POST['calle'];
 	$colonia = $_POST['colonia'];
 	$c_p = $_POST['cp'];
+	$identificador = $_POST['identificador'];
 
 
 
 
-	if(compare_jugadores($nombre, $a_paterno, $a_materno, $calle, $colonia, $c_p))
+	if(compare_jugadores($nombre, $a_paterno, $a_materno, $calle, $colonia, $c_p, $identificador))
 	{
 		$mensaje = "error2";
 	}else{

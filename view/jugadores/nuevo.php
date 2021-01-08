@@ -435,6 +435,7 @@
 		var num = $('#numero').val();
 		var col = $('#colonia').val();
 		var cp = $('#cp').val();
+        var identificador = $('#identificador').val();
 
 		if ((a_pat=="")||(nom=="")||(calle=="")||(cp=="")||(col==""))
 		{
@@ -455,7 +456,8 @@
 				"calle" : calle,
 				"numero" : num,
 				"colonia" : col,
-				"cp" : cp
+				"cp" : cp,
+                "identificador" : identificador
 			};
 
 
