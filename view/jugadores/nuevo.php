@@ -850,7 +850,7 @@
 
 		submitHandler: function (form) {
 			var parametros = {
-                "identificador" : $("#identificador").val();
+                "identificador" : $("#identificador").val(),
 				"a_paterno" : $('#a_paterno').val(),
 				"a_materno" : $('#a_materno').val(),
 				"nombre" : $('#nombre_jugador').val(),
