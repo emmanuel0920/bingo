@@ -83,7 +83,7 @@
 					<!-- Text input-->
 
                         <div class="row">
-                            <div class="col-md-12">
+                            <div>
                                 <div class="form-group" style="display: flex; justify-content: center;">
                                     <label for="foto_id">
                                         <i class="fa fa-camera bigger-150">&nbsp;Tomar Fotografía</i>
