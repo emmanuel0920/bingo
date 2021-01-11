@@ -83,7 +83,7 @@
 					<!-- Text input-->
 
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="">
                                 <div class="form-group" style="display: flex; justify-content: center;">
                                     <label for="foto_id">
                                         <i class="fa fa-camera bigger-150">&nbsp;Tomar Fotografía</i>
@@ -779,142 +779,54 @@
 	      source: tags_colonia
 	    });
 
-
-       
-
-
-
 	});
 
-	$('#form_jugadores').validate({
-		errorElement: 'div',
-		errorClass: 'help-block',
-		focusInvalid: false,
-		ignore: "",
-		rules: {
-			a_paterno: {
-				required: true
-			},
+    function send_form_jugadores(){
 
-			nombre_jugador: {
-				required: true
-			},
+        var myform = document.getElementById("form_jugadores");
+        var datos = new FormData(myform);
 
-            porcen: {
-                min: 0,
-                max: 100
+        //waitingDialog.show('Dando salida a productos...', {dialogSize: 'sm', progressType: 'warning'});
+        $.ajax({
+            url:   './model/jugadores/create_jugador.php',
+            type:  'post',
+            data:  datos,
+            processData: false,
+            contentType: false,
+
+            success:  function (data) {
+                if (data==='correcto'){
+                    swal({
+                       title: "¡Datos guardados correctamente!",
+                       type: "success",
+                       button: "Aceptar"
+                    });
+                     cambiarcont('view/jugadores/nuevo.php');
+                }
+
+                 if (data==='error2'){
+                    swal({
+                       title: "¡Error!",
+                       text: "¡Ocurrio algo al guardar!",
+                       type: "error",
+                       button: "Aceptar"
+                    });
+                }
+
+                 if (data==='error'){
+                    swal({
+                       title: "¡Error!",
+                       text: "¡Este jugador ya registró con anterioridad!",
+                       type: "warning",
+                       button: "Aceptar"
+                    });
+                }
+
             }
+        });
+    }
 
-		},
-
-		messages: {
-			a_paterno: {
-				required: "Campo obligatorio."
-			},
-
-			nombre_jugador: {
-				required: "Campo obligatorio."
-			},
-
-            porcen: {
-                min: "El valor mínimo es 0",
-                max: "El valor máximo es 100"
-            }
-
-		},
-
-
-		highlight: function (e) {
-			$(e).closest('.form-group').removeClass('has-info').addClass('has-error');
-		},
-
-		success: function (e) {
-			$(e).closest('.form-group').removeClass('has-error');//.addClass('has-info');
-			$(e).remove();
-		},
-
-		errorPlacement: function (error, element) {
-			if(element.is('input[type=checkbox]') || element.is('input[type=radio]')) {
-				var controls = element.closest('div[class*="col-"]');
-				if(controls.find(':checkbox,:radio').length > 1) controls.append(error);
-				else error.insertAfter(element.nextAll('.lbl:eq(0)').eq(0));
-			}
-			else if(element.is('.select2')) {
-				error.insertAfter(element.siblings('[class*="select2-container"]:eq(0)'));
-			}
-			else if(element.is('.chosen-select')) {
-				error.insertAfter(element.siblings('[class*="chosen-container"]:eq(0)'));
-			}
-			else error.insertAfter(element.parent());
-		},
-
-		submitHandler: function (form) {
-			var parametros = {
-                "identificador" : $("#identificador").val();
-				"a_paterno" : $('#a_paterno').val(),
-				"a_materno" : $('#a_materno').val(),
-				"nombre" : $('#nombre_jugador').val(),
-				"calle" : $('#calle').val(),
-				"numero" : $('#numero').val(),
-				"colonia" : $('#colonia').val(),
-				"cp" : $('#cp').val(),
-				"telefono" : $('#telefono').val(),
-				"seccion" : $('#seccion').val(),
-				"edad_jugador" : $('#edad_jugador').val(),
-				"fecha_nacimiento" : $('#fecha_nacimiento').val(),
-				"movilizador" : $('#movilizador').val(),/*NO SÉ SI ESTO ESTÉ BIEN*/
-				"id_seccional" : $('#seccional').val(),
-				"id_zonal" : $('#zonal').val(),
-				"voto" : $('#voto:checked').val(),
-                "a_quien" : $('#a_quien').val(),
-                "porcen" : $('#porcen').val(),
-                "make_mov" : $('#make_mov:checked').val(),
-				"observaciones" : $('#observaciones').val(),
-			};
-
-
-			$.ajax({
-					data:  parametros,
-					url:   './model/jugadores/create_jugador.php',
-					type:  'post',
-
-					success:  function (data) {
-							if (data==='correcto'){
-								swal({
-								  title: "¡Datos guardados correctamente!",
-								  timer: 3000,
-								  icon: "success",
-								  button: "Aceptar"
-								});
-								cambiarcont('view/jugadores/nuevo.php');
-							}
-
-							if (data==='error2'){
-								swal({
-								  title: "¡Error!",
-								  text: "¡Ocurrio algo al guardar!",
-								  timer: 3000,
-								  type: "error",
-								  button: "Aceptar"
-								});
-							}
-
-							if (data==='error'){
-								swal({
-								  title: "¡Error!",
-								  text: "¡Este jugador ya registró con anterioridad!",
-								  timer: 3000,
-								  type: "warning",
-								  button: "Aceptar"
-								});
-							}
-					}
-			});
-		}
-
-	});
-
-    	function validate_form(){
+	function validate_form(){
     	$('#form_edit_jugadores').validate({
     	    errorElement: 'div',
     		errorClass: 'help-block',
