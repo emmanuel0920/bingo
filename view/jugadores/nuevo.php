@@ -234,7 +234,7 @@
 
         					</div>
     					</div>
-                        
+
     					<div class="row">
 
     						<div class="col-md-4">
@@ -856,6 +856,8 @@
                 data:  datos,
                 url:   './model/jugadores/create_jugador.php',
                 type:  'post',
+                processData: false,
+                contentType: false,
 
                 success:  function (data) {
                     if (data==='correcto'){
