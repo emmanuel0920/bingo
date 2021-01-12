@@ -399,15 +399,13 @@
     						</div>
     					</div>
 
-
-    					<!-- Button -->
-    					<div class="form-group">
-    						<div class="col-xs-12 center">
-    							<button type="submit" class="btn btn-success"><i class="ace-icon fa fa-floppy-o"></i>Guardar</button>
-    						</div>
-    					</div>
-
-				</form>
+    				</form>
+				</div>
+				<!-- Button -->
+				<div class="form-group">
+					<div class="col-xs-12 center">
+						<button class="btn btn-success" onclick="send_form_jugadores();"><i class="ace-icon fa fa-floppy-o"></i>Guardar</button>
+					</div>
 				</div>
 
 				<div id="carga_tabla"></div>
