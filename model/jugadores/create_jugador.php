@@ -1,7 +1,8 @@
 <?php
 include('../../controller/jugadores/funciones_jugadores.php');
 include('../../controller/funciones.php');
-
+var_dump($_POST);
+exit();
 $nombre = $_POST['nombre'];
 $a_paterno = $_POST['a_paterno'];
 $a_materno = $_POST['a_materno'];
