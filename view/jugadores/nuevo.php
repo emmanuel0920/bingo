@@ -79,7 +79,7 @@
 		<div class="col-xs-12">
 			<!-- PAGE CONTENT BEGINS -->
 			    <div id="carga_editar">
-				<form class="form-horizontal" method="post"  id="form_jugadores">
+				<form class="form-horizontal" method="post" id="form_jugadores" name="form_jugadores">
 					<!-- Text input-->
 
                         <div class="row">
@@ -95,6 +95,7 @@
                                 </div>
                             </div>                                
                         </div>
+
                         <br>
 
                         <div class="row">
@@ -120,7 +121,7 @@
     							   <label class="col-md-5 control-label">Apellido Paterno<FONT COLOR="red">*</FONT></label>
     							    <div class="col-md-7 inputGroupContainer">
     									<div class="input-group">
-    										<input  name="a_paterno" id="a_paterno" placeholder="Apellido Paterno" class="form-control" type="text"  />
+    										<input name="a_paterno" id="a_paterno" placeholder="Apellido Paterno" class="form-control" type="text"  />
     										<span class="input-group-addon"><i class="fa fa-user"></i></span>
     									</div>
     								</div>
@@ -132,7 +133,7 @@
     							   <label class="col-md-5 control-label">Apellido Materno</label>
     							    <div class="col-md-7 inputGroupContainer">
     									<div class="input-group">
-    										<input  name="a_materno" id="a_materno" placeholder="Apellido Materno" class="form-control" type="text" onchange="buscar_jugador_apellidos()" />
+    										<input name="a_materno" id="a_materno" placeholder="Apellido Materno" class="form-control" type="text" onchange="buscar_jugador_apellidos()" />
     										<span class="input-group-addon"><i class="fa fa-user"></i></span>
     									</div>
     								</div>
@@ -144,7 +145,7 @@
     							   <label class="col-md-5 control-label">Nombre<FONT COLOR="red">*</FONT></label>
     							    <div class="col-md-7 inputGroupContainer">
     									<div class="input-group">
-    										<input  name="nombre_jugador" id="nombre_jugador" placeholder="Nombre" class="form-control" type="text"   onchange="buscar_jugador()" />
+    										<input name="nombre_jugador" id="nombre_jugador" placeholder="Nombre" class="form-control" type="text"   onchange="buscar_jugador()" />
     										<span class="input-group-addon"><i class="fa fa-user"></i></span>
     									</div>
     								</div>
@@ -233,6 +234,7 @@
 
         					</div>
     					</div>
+
     					<div class="row">
 
     						<div class="col-md-4">
@@ -322,10 +324,10 @@
     									<div class="input-group">
     										<div class="radio">
         										<label>
-        											<input type="radio" name="genero" id="voto" value="1" /> Si
+        											<input type="radio" name="voto" id="voto" value="1" /> Si
         										</label>
         										<label>
-        											<input type="radio" name="genero" id="voto" value="0" /> No
+        											<input type="radio" name="voto" id="voto" value="0" /> No
         										</label>
         									</div>
     									</div>
@@ -398,14 +400,14 @@
     							</div>
     						</div>
     					</div>
+        				
+                        <div class="form-group">
+        					<div class="col-xs-12 center">
+        						<button type="submit" class="btn btn-success"><i class="ace-icon fa fa-floppy-o"></i>Guardar</button>
+        					</div>
+        				</div>
 
     				</form>
-				</div>
-				<!-- Button -->
-				<div class="form-group">
-					<div class="col-xs-12 center">
-						<button class="btn btn-success" onclick="send_form_jugadores();"><i class="ace-icon fa fa-floppy-o"></i>Guardar</button>
-					</div>
 				</div>
 
 				<div id="carga_tabla"></div>
@@ -784,50 +786,112 @@
 
 	});
 
-	function send_form_jugadores(){
 
-        var myform = document.getElementById("form_jugadores");
-        var datos = new FormData(myform);
+    $('#form_jugadores').validate({
+        errorElement: 'div',
+        errorClass: 'help-block',
+        focusInvalid: false,
+        ignore: "",
+        rules: {
+            a_paterno: {
+                required: true
+            },
 
-        //waitingDialog.show('Dando salida a productos...', {dialogSize: 'sm', progressType: 'warning'});
-        $.ajax({
-            url:   './model/jugadores/create_jugador.php',
-            type:  'post',
-            data:  datos,
-            processData: false,
-            contentType: false,
+            nombre_jugador: {
+                required: true
+            },
 
-            success:  function (data) {
-                if (data==='correcto'){
-                    swal({
-                       title: "¡Datos guardados correctamente!",
-                       type: "success",
-                       button: "Aceptar"
-                    });
-                     cambiarcont('view/jugadores/nuevo.php');
-                }
-
-                 if (data==='error2'){
-                    swal({
-                       title: "¡Error!",
-                       text: "¡Ocurrio algo al guardar!",
-                       type: "error",
-                       button: "Aceptar"
-                    });
-                }
-
-                 if (data==='error'){
-                    swal({
-                       title: "¡Error!",
-                       text: "¡Este jugador ya registró con anterioridad!",
-                       type: "warning",
-                       button: "Aceptar"
-                    });
-                }
-
+            porcen: {
+                min: 0,
+                max: 100
             }
-        });
-    }
+        },
+
+        messages: {
+            a_paterno: {
+                required: "Campo obligatorio."
+            },
+
+            nombre_jugador: {
+                required: "Campo obligatorio."
+            },
+
+            porcen: {
+                min: "El valor mínimo es 0",
+                max: "El valor máximo es 100"
+            }
+        },
+
+        highlight: function (e) {
+            $(e).closest('.form-group').removeClass('has-info').addClass('has-error');
+        },
+
+        success: function (e) {
+            $(e).closest('.form-group').removeClass('has-error');//.addClass('has-info');
+            $(e).remove();
+        },
+
+        errorPlacement: function (error, element) {
+            if(element.is('input[type=checkbox]') || element.is('input[type=radio]')) {
+                var controls = element.closest('div[class*="col-"]');
+                if(controls.find(':checkbox,:radio').length > 1) controls.append(error);
+                else error.insertAfter(element.nextAll('.lbl:eq(0)').eq(0));
+            }
+            else if(element.is('.select2')) {
+                error.insertAfter(element.siblings('[class*="select2-container"]:eq(0)'));
+            }
+            else if(element.is('.chosen-select')) {
+                error.insertAfter(element.siblings('[class*="chosen-container"]:eq(0)'));
+            }
+            else error.insertAfter(element.parent());
+        },
+
+        submitHandler: function (form) {
+            
+            var myform = document.getElementById('form_jugadores');
+            var datos = new FormData(myform);
+
+            // return;
+            $.ajax({
+                data:  datos,
+                url:   './model/jugadores/create_jugador.php',
+                type:  'post',
+                processData: false,
+                contentType: false,
+
+                success:  function (data) {
+                    if (data==='correcto'){
+                        swal({
+                          title: "¡Datos guardados correctamente!",
+                          type: "success",
+                          button: "Aceptar"
+                        });
+                        cambiarcont('view/jugadores/nuevo.php');
+                    }
+
+                    if (data==='error2'){
+                        swal({
+                          title: "¡Error!",
+                          text: "¡Ocurrio algo al guardar!",
+                          type: "error",
+                          button: "Aceptar"
+                        });
+                    }
+
+                    if (data==='error'){
+                        swal({
+                          title: "¡Error!",
+                          text: "¡Este jugador ya registró con anterioridad!",
+                          type: "warning",
+                          button: "Aceptar"
+                        });
+                    }
+                }
+            });
+        }
+
+    });
+
 
     	function validate_form(){
     	$('#form_edit_jugadores').validate({
