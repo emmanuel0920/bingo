@@ -281,7 +281,7 @@ $tr_jugadores = fill_tr_jugadores_usuario ($jugadores_capturista);
 			"aaSorting": [],
 				
 			select: {
-				style: 'multi'
+				// style: 'multi'
 			}
 	    } );
 	
