@@ -322,10 +322,10 @@
     									<div class="input-group">
     										<div class="radio">
         										<label>
-        											<input type="radio" name="genero" id="voto" value="1" /> Si
+        											<input type="radio" name="voto" id="voto" value="1" /> Si
         										</label>
         										<label>
-        											<input type="radio" name="genero" id="voto" value="0" /> No
+        											<input type="radio" name="voto" id="voto" value="0" /> No
         										</label>
         									</div>
     									</div>

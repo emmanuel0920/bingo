@@ -10,11 +10,10 @@ function compare_jugador($identificador)
     return $result;
 }
 
-function create_jugador($id_movilizador, $id_seccional, $id_zonal, $nombre, $a_paterno, $a_materno, $calle, $numero, $colonia, $cp, $telefono, $seccion, $casilla, $posibilidad, $a_quien, $edad_jugador, $id_usuario, $fecha_nacimiento)
-
+function create_jugador($id_movilizador, $id_seccional, $id_zonal, $nombre, $a_paterno, $a_materno, $calle, $numero, $colonia, $cp, $telefono, $seccion, $casilla, $posibilidad, $a_quien, $edad_jugador, $id_usuario, $fecha_nacimiento, $observaciones, $identificador, $voto)
 {
-    $sql = "INSERT INTO  jugadores ( id_movilizador ,  id_seccional ,  id_zonal ,  nombre ,  a_paterno ,  a_materno, calle, numero, colonia, c_p ,  telefono ,  seccion ,  casilla ,  posibilidad ,  a_quien,  edad, fecha_nacimiento, id_capturista, fecha_captura, existente)
-    VALUES (".$id_movilizador.",".$id_seccional.",".$id_zonal.", '".$nombre."', '".$a_paterno."', '".$a_materno."', '".$calle."', '".$numero."', '".$colonia."', '".$cp."', '".$telefono."', '".$seccion."', '".$casilla."', ".$posibilidad.", '".$a_quien."', '".$edad_jugador."','".$fecha_nacimiento."', ".$id_usuario.", now(), 0)";
+    $sql = "INSERT INTO  jugadores ( id_movilizador ,  id_seccional ,  id_zonal ,  nombre ,  a_paterno ,  a_materno, calle, numero, colonia, c_p ,  telefono ,  seccion ,  casilla ,  posibilidad ,  a_quien,  edad, fecha_nacimiento, id_capturista, fecha_captura, existente, identificador, voto)
+    VALUES (".$id_movilizador.",".$id_seccional.",".$id_zonal.", '".$nombre."', '".$a_paterno."', '".$a_materno."', '".$calle."', '".$numero."', '".$colonia."', '".$cp."', '".$telefono."', '".$seccion."', '".$casilla."', ".$posibilidad.", '".$a_quien."', '".$edad_jugador."','".$fecha_nacimiento."', ".$id_usuario.", now(), 0, '".$identificador."', ".$voto.")";
 
     $result = querys($sql);
 
