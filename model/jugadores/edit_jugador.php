@@ -2,6 +2,8 @@
 include('../../controller/jugadores/funciones_jugadores.php');
 include('../../controller/funciones.php');
 
+$voto = $make_mov = 0;
+
 $nombre = $_POST['nombre'];
 $a_paterno = $_POST['a_paterno'];
 $a_materno = $_POST['a_materno'];
@@ -21,8 +23,16 @@ $fecha_nacimiento = $_POST['fecha_nacimiento'];
 $movilizador = $_POST['movilizador'];
 $observaciones = $_POST['observaciones'];
 $id = $_POST['id'];
-$voto = $_POST['voto'];
-	if(update_jugador($id, $nombre, $a_paterno, $a_materno, $seccion, $observaciones))
+
+if (isset($_POST['make_mov'])) {
+	$make_mov = 1;
+}
+
+if (isset($_POST['voto'])) {
+	$voto = 1;
+}
+
+	if(update_jugador($id, $nombre, $a_paterno, $a_materno, $calle, $numero, $colonia, $cp, $telefono, $seccion, $casilla, $id_seccional, $id_zonal, $posibilidad, $a_quien, $edad_jugador, $fecha_nacimiento, $movilizador, $observaciones))
 	{
 	    $mensaje = "correcto";
 	}else

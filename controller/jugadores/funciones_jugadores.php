@@ -33,7 +33,7 @@ function create_jugador_auto($id_movilizador, $id_seccional, $id_zonal, $nombre,
 
 function get_jugadores_capturista($id_capturista)
 {
-	$sql = "SELECT id_usuario ,  id_seccional ,  id_zonal ,  identificador ,  nombre ,  a_paterno ,  a_materno, calle, numero, colonia, c_p ,  telefono ,  seccion ,  casilla ,  posibilidad ,  a_quien,  edad, id_capturista, fecha_captura, existente
+	$sql = "SELECT id, id_usuario ,  id_seccional ,  id_zonal ,  identificador ,  nombre ,  a_paterno ,  a_materno, calle, numero, colonia, c_p ,  telefono ,  seccion ,  casilla ,  posibilidad ,  a_quien,  edad, id_capturista, fecha_captura, existente
 				FROM jugadores
 				WHERE 1";
 
@@ -106,9 +106,9 @@ function get_jugador($id)
     return $result;
 }
 
-function update_jugador($id, $nombre, $a_paterno, $a_materno, $seccion, $observaciones)
+function update_jugador($id, $nombre, $a_paterno, $a_materno, $calle, $numero, $colonia, $cp, $telefono, $seccion, $casilla, $id_seccional, $id_zonal, $posibilidad, $a_quien, $edad_jugador, $fecha_nacimiento, $movilizador, $observaciones)
 {
-    $sql = "UPDATE jugadores SET nombre = '".$nombre."', a_paterno = '".$a_paterno."',a_materno = '".$a_materno."', seccion = '".$seccion."', observaciones ='".$observaciones.
+    echo $sql = "UPDATE jugadores SET nombre = '".$nombre."', a_paterno = '".$a_paterno."',a_materno = '".$a_materno."', calle = '".$calle."', numero = '".$numero."', colonia = '".$colonia."', c_p = '".$cp."', telefono = '".$telefono."', seccion = '".$seccion."', casilla = '".$casilla."', id_seccional = '".$id_seccional."', id_zonal = '".$id_zonal."', posibilidad = '".$posibilidad."', a_quien = '".$a_quien."', edad = '".$edad_jugador."', fecha_nacimiento = '".$fecha_nacimiento."', id_movilizador = '".$movilizador."', observaciones ='".$observaciones.
             "' WHERE id = $id";
 
     $result = querys($sql);
