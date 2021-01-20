@@ -16,7 +16,6 @@ function fill_tr_jugadores_usuario ($jugadores_capturista)
 
 	foreach ($jugadores_capturista as $jugador_capturista) 
 	{
-		
 	    if(!$jugador_capturista['existente'])
 	    {
 	        $fondo= " style='background-color:#de4848 !important;'";
@@ -24,7 +23,7 @@ function fill_tr_jugadores_usuario ($jugadores_capturista)
 	        $fondo ="";
 	    }
 	    
-	    $datos_modal= "'".$jugador_capturista['a_paterno']."'" .','. "'".$jugador_capturista['a_materno']."'" .','. "'".$jugador_capturista['nombre']."'" .','. "'".$jugador_capturista['calle']."'" .','. $jugador_capturista['numero'] .','. "'".$jugador_capturista['colonia']."'" .','. $jugador_capturista['c_p'] .','. "'".$jugador_capturista['seccion']."'" .','."'".$jugador_capturista['fecha_captura']."', '".$jugador_capturista['identificador']."'";
+	    $datos_modal= "'".$jugador_capturista['a_paterno']."'" .','. "'".$jugador_capturista['a_materno']."'" .','. "'".$jugador_capturista['nombre']."'" .','. "'".$jugador_capturista['calle']."'" .','. $jugador_capturista['numero'] .','. "'".$jugador_capturista['colonia']."'" .','. $jugador_capturista['c_p'] .','. "'".$jugador_capturista['seccion']."'" .','."'".$jugador_capturista['fecha_captura']."', '".$jugador_capturista['identificador']."', '".$jugador_capturista['id']."'";
 
 	 	$tr_jugadores_capturista.='<tr'.$fondo.' >
 										<td>'.$jugador_capturista['a_paterno'].'</td>

@@ -6,6 +6,7 @@
   $select_seccional = fill_select_seccional();
   $select_zonal = fill_select_zonal();
 
+  $id = $_POST['id'];
   $paterno = $_POST['paterno'];
   $materno = $_POST['materno'];
   $nombre = $_POST['nombre'];
@@ -60,6 +61,8 @@
 
         <form id="form_update_jugador" class="form-horizontal">
           <fieldset>
+
+            <input type="hidden" name="id" id="id" value="<?=$id;?>">
 
             <div class="row">
               <div class="col-md-6">
@@ -216,7 +219,7 @@
                        <label class="col-md-5 control-label">Movilizador<FONT COLOR="red">*</FONT></label>
                         <div class="col-md-7 inputGroupContainer">
                         <div class="input-group">
-                          <select name="movilizador" id="movilizador" class="chosen-select form-control" type="text">
+                          <select name="movilizador" id="movilizador" class="chosen-select form-control" type="text" required>
                               <option value="">Selecciona una Opción</option>
                                   <?php echo $select_movilizador;?>
                           </select>
@@ -234,7 +237,7 @@
                      <label class="col-md-5 control-label">Seccional<FONT COLOR="red">*</FONT></label>
                       <div class="col-md-7 inputGroupContainer">
                       <div class="input-group">
-                      <select name="seccional" id="seccional" class="chosen-select form-control" type="text">
+                      <select name="seccional" id="seccional" class="chosen-select form-control" type="text" required>
                         <option value="">Selecciona una Opción</option>
                           <?php echo $select_seccional;?>
                       </select>

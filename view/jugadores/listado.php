@@ -169,6 +169,7 @@ $tr_jugadores = fill_tr_jugadores_usuario ($jugadores_capturista);
 	                "porcen" : $('#porcen').val(),
 	                "make_mov" : $('#make_mov:checked').val(),
 					"observaciones" : $('#observaciones').val(),
+					"id" : $('#id').val(),
 				};
 
 				$.ajax({
@@ -177,35 +178,33 @@ $tr_jugadores = fill_tr_jugadores_usuario ($jugadores_capturista);
 						type:  'post',
 
 						success:  function (data) {
-								if (data==='correcto'){
-									swal({
-									  title: "¡Datos guardados correctamente!",
-									  timer: 3000,
-									  icon: "success",
-									  button: "Aceptar"
-									});
+							if (data==='correcto'){
+								swal({
+								  title: "¡Datos guardados correctamente!",
+								  icon: "success",
+								  button: "Aceptar"
+								}).then((value) => {
 									cambiarcont('view/jugadores/listado.php');
-								}
+								});
+							}
 
-								if (data==='error2'){
-									swal({
-									  title: "¡Error!",
-									  text: "¡Ocurrio algo al guardar!",
-									  timer: 3000,
-									  type: "error",
-									  button: "Aceptar"
-									});
-								}
+							if (data==='error2'){
+								swal({
+								  title: "¡Error!",
+								  text: "¡Ocurrio algo al guardar!",
+								  icon: "error",
+								  button: "Aceptar"
+								});
+							}
 
-								if (data==='error'){
-									swal({
-									  title: "¡Error!",
-									  text: "¡Este jugador ya registró con anterioridad!",
-									  timer: 3000,
-									  type: "warning",
-									  button: "Aceptar"
-									});
-								}
+							if (data==='error'){
+								swal({
+								  title: "¡Error!",
+								  text: "¡Este jugador ya registró con anterioridad!",
+								  icon: "warning",
+								  button: "Aceptar"
+								});
+							}
 						}
 				});
 			}
@@ -214,7 +213,7 @@ $tr_jugadores = fill_tr_jugadores_usuario ($jugadores_capturista);
 	}	
 
 	//JQUERY AJAX
-	function modal_update_jugador_foto(paterno, materno, nombre, calle, numero, colonia, cp, seccion, fecha_captura,identificador){
+	function modal_update_jugador_foto(paterno, materno, nombre, calle, numero, colonia, cp, seccion, fecha_captura,identificador, id){
         var xmlhttp;
 
         if (window.XMLHttpRequest){
@@ -240,7 +239,7 @@ $tr_jugadores = fill_tr_jugadores_usuario ($jugadores_capturista);
             }
         }
 
-        var datos_modal = "paterno="+paterno + "&materno="+materno + "&nombre="+nombre + "&calle="+calle + "&numero="+numero + "&colonia="+colonia + "&cp="+cp + "&seccion="+seccion + "&fecha_captura="+fecha_captura+"&identificador="+identificador ;
+        var datos_modal = "paterno="+paterno + "&materno="+materno + "&nombre="+nombre + "&calle="+calle + "&numero="+numero + "&colonia="+colonia + "&cp="+cp + "&seccion="+seccion + "&fecha_captura="+fecha_captura+"&identificador="+identificador+"&id="+id;
 
         waitingDialog.show('Cargando Información', {dialogSize: 'sm', progressType: 'warning'})
         xmlhttp.open("POST","./view/jugadores/modal_update_jugador.php",true);
