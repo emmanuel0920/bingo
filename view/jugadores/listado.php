@@ -377,4 +377,67 @@ $tr_jugadores = fill_tr_jugadores_usuario ($jugadores_capturista);
 			e.stopPropagation();
 			e.preventDefault();
 		});
+
+	function age_calculator(){
+
+		var input_nacimiento = document.getElementById('fecha_nacimiento').value;
+		var partes = input_nacimiento.split('-');
+
+		var año = partes[0];
+		var mes = partes[1];
+		var dia = partes[2];
+
+		var fecha_actual = new Date();
+
+		var año_actual = document.getElementById('año_actual').value = fecha_actual.getFullYear();
+		var mes_actual = document.getElementById('mes_actual').value = fecha_actual.getMonth()+1;
+		var dia_actual = document.getElementById('año_actual').value = fecha_actual.getDate();
+
+		var edad_año = año_actual - año;
+		var edad_mes = mes_actual - mes;
+		var edad_dia = dia_actual - dia;
+
+		if(año_actual > año){
+
+			if(mes_actual < mes){
+				$('#edad_jugador').val(edad_año-1);
+			}
+			else if(mes_actual > mes){
+				$('#edad_jugador').val(edad_año);
+			}
+			else if (mes_actual == mes){
+				if (dia_actual < dia) {
+					$('#edad_jugador').val(edad_año-1);
+				}
+				else{
+					$('#edad_jugador').val(edad_año);
+				}
+			}
+
+		}
+
+	}
+
+	function date_calculator(){
+
+		var input_edad = document.getElementById('edad_jugador').value;
+		var fecha_actual = new Date();
+
+		var año_actual = document.getElementById('año_actual').value = fecha_actual.getFullYear();
+		var mes_actual = document.getElementById('mes_actual').value = fecha_actual.getMonth()+1;
+		var dia_actual = document.getElementById('año_actual').value = fecha_actual.getDate();
+		
+		var digito = mes_actual.toString().length;
+
+		var año_nacimiento = año_actual - input_edad;
+
+		if (digito == 1 ) {
+			var fecha_nacimiento = document.getElementById('fecha_nacimiento').value =  año_nacimiento + "-" + 0 + mes_actual + "-" + dia_actual;
+
+		}else{
+			var fecha_nacimiento = document.getElementById('fecha_nacimiento').value =  año_nacimiento + "-" + mes_actual + "-" + dia_actual;
+		}
+
+	}
+
 </script>
