@@ -863,7 +863,7 @@
                     if (data==='correcto'){
                         swal({
                           title: "¡Datos guardados correctamente!",
-                          type: "success",
+                          icon: "success",
                           button: "Aceptar"
                         });
                         cambiarcont('view/jugadores/nuevo.php');
@@ -873,7 +873,7 @@
                         swal({
                           title: "¡Error!",
                           text: "¡Ocurrio algo al guardar!",
-                          type: "error",
+                          icon: "error",
                           button: "Aceptar"
                         });
                     }
@@ -882,7 +882,7 @@
                         swal({
                           title: "¡Error!",
                           text: "¡Este jugador ya registró con anterioridad!",
-                          type: "warning",
+                          icon: "warning",
                           button: "Aceptar"
                         });
                     }
