@@ -239,24 +239,11 @@
 
     						<div class="col-md-4">
     							<div class="form-group">
-    							   <label class="col-md-5 control-label">Edad</label>
-    							    <div class="col-md-7 inputGroupContainer">
-    									<div class="input-group">
-    										<input name="edad_jugador" id="edad_jugador" placeholder="Edad" class="form-control" type="number" onchange="date_calculator()">
-    										<span class="input-group-addon"><i class="fa fa-hashtag"></i></span>
-    									</div>
-    								</div>
-    							</div>
-
-    						</div>
-
-    						<div class="col-md-4">
-    							<div class="form-group">
     							   <label class="col-md-5 control-label">Fecha de Nacimiento</label>
     							    <div class="col-md-7 inputGroupContainer">
 
-    									<div class="input-group date" data-provide="datepicker">
-    									    <input type="text" class="form-control mask_fecha" name="fecha_nacimiento" id="fecha_nacimiento" placeholder="aaaa/mm/dd" onchange="age_calculator()">
+    									<div class="input-group">
+    									    <input type="date" class="form-control" name="fecha_nacimiento" id="fecha_nacimiento" onchange="age_calculator()">
     									    <span class="input-group-addon"><i class="ace-icon fa fa-calendar"></i></span>
     									</div>
 
@@ -264,6 +251,19 @@
     							</div>
 
     						</div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                   <label class="col-md-5 control-label">Edad</label>
+                                    <div class="col-md-7 inputGroupContainer">
+                                        <div class="input-group">
+                                            <input name="edad_jugador" id="edad_jugador" placeholder="Edad" class="form-control" type="number" onchange="date_calculator()">
+                                            <span class="input-group-addon"><i class="fa fa-hashtag"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
 
     					<div class="col-md-4">
     								<div class="form-group">
@@ -653,10 +653,10 @@
 		var año_nacimiento = año_actual - input_edad;
 
 		if (digito == 1 ) {
-			var fecha_nacimiento = document.getElementById('fecha_nacimiento').value =  año_nacimiento + "/" + 0 + mes_actual + "/" + dia_actual;
+			var fecha_nacimiento = document.getElementById('fecha_nacimiento').value =  año_nacimiento + "-" + 0 + mes_actual + "-" + dia_actual;
 
 		}else{
-			var fecha_nacimiento = document.getElementById('fecha_nacimiento').value =  año_nacimiento + "/" + mes_actual + "/" + dia_actual;
+			var fecha_nacimiento = document.getElementById('fecha_nacimiento').value =  año_nacimiento + "-" + mes_actual + "-" + dia_actual;
 		}
 
 	}
@@ -665,7 +665,7 @@
 
 		var input_nacimiento = document.getElementById('fecha_nacimiento').value;
 
-		var partes = input_nacimiento.split('/');
+		var partes = input_nacimiento.split('-');
 
 		var año = partes[0];
 		var mes = partes[1];
