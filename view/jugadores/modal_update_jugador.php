@@ -172,14 +172,20 @@
                       </div>
               </div>
 
+              <input id="año_actual" type="hidden">
+              <input id="mes_actual" type="hidden">
+              <input id="dia_actual" type="hidden">
+
               <div class="col-md-6">
                 <div class="form-group">
-                     <label class="col-md-5 control-label">Edad</label>
+                     <label class="col-md-5 control-label">Fecha de Nacimiento</label>
                       <div class="col-md-7 inputGroupContainer">
+
                       <div class="input-group">
-                        <input name="edad_jugador" id="edad_jugador" placeholder="Edad" class="form-control" type="number" onchange="date_calculator()">
-                        <span class="input-group-addon"><i class="fa fa-hashtag"></i></span>
+                          <input type="date" class="form-control" name="fecha_nacimiento" id="fecha_nacimiento" onchange="age_calculator()">
+                          <span class="input-group-addon"><i class="ace-icon fa fa-calendar"></i></span>
                       </div>
+
                     </div>
                   </div>
               </div>
@@ -188,14 +194,12 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                     <label class="col-md-5 control-label">Fecha de Nacimiento</label>
+                     <label class="col-md-5 control-label">Edad</label>
                       <div class="col-md-7 inputGroupContainer">
-
-                      <div class="input-group date" data-provide="datepicker">
-                          <input type="text" class="form-control mask_fecha" name="fecha_nacimiento" id="fecha_nacimiento" placeholder="aaaa/mm/dd" onchange="age_calculator()">
-                          <span class="input-group-addon"><i class="ace-icon fa fa-calendar"></i></span>
+                      <div class="input-group">
+                        <input name="edad_jugador" id="edad_jugador" placeholder="Edad" class="form-control" type="number" onchange="date_calculator()">
+                        <span class="input-group-addon"><i class="fa fa-hashtag"></i></span>
                       </div>
-
                     </div>
                   </div>
               </div>
