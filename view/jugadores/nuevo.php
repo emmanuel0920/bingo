@@ -173,7 +173,7 @@
         							   <label class="col-md-5 control-label">Número<FONT COLOR="red">*</FONT></label>
         							    <div class="col-md-7 inputGroupContainer">
         									<div class="input-group">
-        										<input name="numero" id="numero" placeholder="Número" class="form-control" type="number"  >
+        										<input name="numero" id="numero" placeholder="Número" class="form-control" type="number" value="0">
         										<span class="input-group-addon"><i class="fa fa-hashtag"></i></span>
         									</div>
         								</div>
@@ -200,7 +200,7 @@
         							   <label class="col-md-5 control-label">Código Postal<FONT COLOR="red">*</FONT></label>
         							    <div class="col-md-7 inputGroupContainer">
         									<div class="input-group">
-        										<input name="cp" id="cp" placeholder="Código Postal" class="form-control" type="text"  onchange="compare_jugador()" >
+        										<input name="cp" id="cp" placeholder="Código Postal" class="form-control" type="text" value="0" onchange="compare_jugador()" >
         										<span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
         									</div>
         								</div>
