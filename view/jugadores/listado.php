@@ -203,7 +203,7 @@ $tr_jugadores = fill_tr_jugadores_usuario ($jugadores_capturista);
 	});
 
 	//JQUERY AJAX
-	function modal_update_jugador_foto(paterno, materno, nombre, calle, numero, colonia, cp, seccion, fecha_captura){
+	function modal_update_jugador_foto(paterno, materno, nombre, calle, numero, colonia, cp, seccion, fecha_captura,identificador){
         var xmlhttp;
 
         if (window.XMLHttpRequest){
@@ -227,7 +227,7 @@ $tr_jugadores = fill_tr_jugadores_usuario ($jugadores_capturista);
             }
         }
 
-        var datos_modal = "paterno="+paterno + "&materno="+materno + "&nombre="+nombre + "&calle="+calle + "&numero="+numero + "&colonia="+colonia + "&cp="+cp + "&seccion="+seccion + "&fecha_captura="+fecha_captura;
+        var datos_modal = "paterno="+paterno + "&materno="+materno + "&nombre="+nombre + "&calle="+calle + "&numero="+numero + "&colonia="+colonia + "&cp="+cp + "&seccion="+seccion + "&fecha_captura="+fecha_captura+"&identificador="+identificador ;
 
         waitingDialog.show('Cargando Información', {dialogSize: 'sm', progressType: 'warning'})
         xmlhttp.open("POST","./view/jugadores/modal_update_jugador.php",true);
