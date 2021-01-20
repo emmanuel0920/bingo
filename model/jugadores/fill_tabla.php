@@ -16,6 +16,7 @@ function fill_tr_jugadores_usuario ($jugadores_capturista)
 
 	foreach ($jugadores_capturista as $jugador_capturista) 
 	{
+		
 	    if(!$jugador_capturista['existente'])
 	    {
 	        $fondo= " style='background-color:#de4848 !important;'";

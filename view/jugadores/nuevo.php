@@ -105,7 +105,7 @@
                                    <label class="col-md-5 control-label">Identificador<FONT COLOR="red">*</FONT></label>
                                     <div class="col-md-7 inputGroupContainer">
                                         <div class="input-group">
-                                            <input name="identificador" id="identificador" placeholder="Identificador" class="form-control" type="text"  />
+                                            <input name="identificador" id="identificador" placeholder="Identificador" class="form-control" type="text" required>
                                             <span class="input-group-addon"><i class="fa fa-user"></i></span>
                                         </div>
                                     </div>

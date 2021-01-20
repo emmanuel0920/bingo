@@ -1,5 +1,7 @@
 <?php
 
+  include('../../model/jugadores/fill.php');
+
   $paterno = $_POST['paterno'];
   $materno = $_POST['materno'];
   $nombre = $_POST['nombre'];
@@ -9,6 +11,23 @@
   $colonia = $_POST['colonia'];
   $seccion = $_POST['seccion'];
   $fecha_captura = $_POST['fecha_captura'];
+  $identificador = $_POST['identificador'];
+  $ruta = "../../assets/evidencias/".$identificador."/";
+  $img = '<img src="../../img/business.png" width="500" height="300">';
+  if(is_dir($ruta))
+  {    
+   $dir = opendir($ruta);     
+    while ($elemento = readdir($dir))
+    {
+      if($elemento != "." && $elemento != "..")
+      {
+        if(!is_dir($ruta.$elemento) )
+        {
+          $img = '<img src="'.$ruta.$elemento.'" width="500" height="300">';
+        }
+      }
+    }
+  }
 
 ?>
 
@@ -24,7 +43,7 @@
       <div class="modal-body">
         
         <div style="display: flex; justify-content: center;">
-          <img src="../../img/business.png" width="500" height="300">
+          <?= $img; ?>
         </div>
 
         <table class="table">
