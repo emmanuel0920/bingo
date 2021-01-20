@@ -270,7 +270,7 @@
     								   <label class="col-md-5 control-label">Movilizador<FONT COLOR="red">*</FONT></label>
     								    <div class="col-md-5 inputGroupContainer">
     										<div class="input-group">
-    											<select name="movilizador" id="movilizador" class="chosen-select form-control" type="text" required>
+    											<select name="movilizador" id="movilizador" class="chosen-select form-control" type="text">
                                                 <option value="">Selecciona una Opción</option>
                                                     <?php echo $select_movilizador;?>
                                             </select>
@@ -292,7 +292,7 @@
     							   <label class="col-md-5 control-label">Seccional<FONT COLOR="red">*</FONT></label>
     							    <div class="col-md-4 inputGroupContainer">
     									<div class="input-group">
-											<select name="seccional" id="seccional" class="chosen-select form-control" type="text" required>
+											<select name="seccional" id="seccional" class="chosen-select form-control" type="text">
 												<option value="">Selecciona una Opción</option>
 													<?php echo $select_seccional;?>
 											</select>
@@ -324,10 +324,7 @@
     									<div class="input-group">
     										<div class="radio">
         										<label>
-        											<input type="radio" name="voto" id="voto" value="1" /> Si
-        										</label>
-        										<label>
-        											<input type="radio" name="voto" id="voto" value="0" /> No
+        											<input type="checkbox" name="voto" id="voto" value="0" onchange="check_value(this.id);">
         										</label>
         									</div>
     									</div>
@@ -375,10 +372,7 @@
                                         <div class="input-group">
                                             <div class="radio">
                                                 <label>
-                                                    <input type="radio" name="make_mov" id="make_mov" value="1" /> Si
-                                                </label>
-                                                <label>
-                                                    <input type="radio" name="make_mov" id="make_mov" value="0"> No
+                                                    <input type="checkbox" name="make_mov" id="make_mov" value="0" onchange="check_value(this.id);">
                                                 </label>
                                             </div>
                                         </div>
@@ -418,6 +412,16 @@
 </div><!-- /.page-content -->
 
 <script>
+
+    function check_value(id_checkbox){
+        
+        var check = document.getElementById(id_checkbox);
+        if (check.checked == true) {
+            check.value = 1;
+        }else{
+            check.value = 0;
+        }
+    }
 
 	function mensaje_error(){
 		swal({
