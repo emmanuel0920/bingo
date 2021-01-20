@@ -123,7 +123,7 @@
                          <label class="col-md-5 control-label">Número<FONT COLOR="red">*</FONT></label>
                           <div class="col-md-7 inputGroupContainer">
                           <div class="input-group">
-                            <input value="<?=$numero?>" name="numero" id="numero" placeholder="Número" class="form-control" type="number"  >
+                            <input name="numero" id="numero" placeholder="Número" class="form-control" type="number"  >
                             <span class="input-group-addon"><i class="fa fa-hashtag"></i></span>
                           </div>
                         </div>
@@ -149,7 +149,7 @@
                          <label class="col-md-5 control-label">Código Postal<FONT COLOR="red">*</FONT></label>
                           <div class="col-md-7 inputGroupContainer">
                           <div class="input-group">
-                            <input value="<?=$cp?>" name="cp" id="cp" placeholder="Código Postal" class="form-control" type="text">
+                            <input name="cp" id="cp" placeholder="Código Postal" class="form-control" type="text">
                             <span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
                           </div>
                         </div>
@@ -158,7 +158,7 @@
 
               <div class="col-md-6">
                 <div class="form-group">
-                         <label class="col-md-5 control-label">Teléfono<FONT COLOR="red">*</FONT></label>
+                         <label class="col-md-5 control-label">Teléfono<FONT COLOR="red"></FONT></label>
                           <div class="col-md-7 inputGroupContainer">
                           <div class="input-group">
                             <input  name="telefono" id="telefono" placeholder="Teléfono" class="form-control" type="number">
@@ -188,17 +188,16 @@
 
               <div class="col-md-6">
                 <div class="form-group">
-                     <label class="col-md-5 control-label">Fecha de Nacimiento</label>
+                     <label class="col-md-5 control-label">Fecha de Nacimiento<FONT COLOR="red">*</FONT></label>
                       <div class="col-md-7 inputGroupContainer">
-
                       <div class="input-group">
                           <input type="date" class="form-control" name="fecha_nacimiento" id="fecha_nacimiento" onchange="age_calculator()">
                           <span class="input-group-addon"><i class="ace-icon fa fa-calendar"></i></span>
                       </div>
-
                     </div>
                   </div>
               </div>
+
             </div>  
 
             <div class="row">
@@ -253,7 +252,7 @@
                       <div class="col-md-7 inputGroupContainer">
                       <div class="input-group">
                         <select  name="zonal" id="zonal" placeholder="Zonal" class="form-control" type="text" required>
-                          <option value="1">Selecciona una Opción</option>
+                          <option value="">Selecciona una Opción</option>
                             <?php echo $select_zonal;?>
                         </select>
                         <span class="input-group-addon"><i class="fa fa-user"></i></span>
@@ -266,7 +265,7 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                     <label class="col-md-5 control-label">¿Votó?<FONT COLOR="red">*</FONT></label>
+                     <label class="col-md-5 control-label">¿Votó?<FONT COLOR="red"></FONT></label>
                       <div class="col-md-7 inputGroupContainer">
                       <div class="input-group">
                         <div class="radio">
@@ -324,7 +323,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
-                     <label class="col-md-2 control-label">Observaciones<FONT COLOR="red">*</FONT></label>
+                     <label class="col-md-2 control-label">Observaciones<FONT COLOR="red"></FONT></label>
                       <div class="col-md-9 inputGroupContainer">
                       <div class="input-group">
                         <textarea name="observaciones" id="observaciones" placeholder="Observaciones" class="form-control" ></textarea>

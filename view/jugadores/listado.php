@@ -6,7 +6,6 @@ $jugadores_capturista= fill_jugadores_usuario($_SESSION['id_usuario']);
 
 $tr_jugadores = fill_tr_jugadores_usuario ($jugadores_capturista);
 
-
 ?>
 
 <div class="breadcrumbs ace-save-state breadcrumbs-fixed" id="breadcrumbs">
@@ -100,6 +99,46 @@ $tr_jugadores = fill_tr_jugadores_usuario ($jugadores_capturista);
 					required: true
 				},
 
+				calle: {
+					required: true
+				},
+
+				numero: {
+					required: true
+				},
+
+				colonia: {
+					required: true
+				},
+
+				cp: {
+					required: true
+				},
+
+				telefono: {
+					required: true
+				},
+
+				seccion: {
+					required: true
+				},
+
+				fecha_nacimiento: {
+					required: true
+				},
+
+				movilizador: {
+					required: true
+				},
+
+				seccional: {
+					required: true
+				},
+
+				zonal: {
+					required: true
+				},
+
 	            porcen: {
 	                min: 0,
 	                max: 100
@@ -114,6 +153,46 @@ $tr_jugadores = fill_tr_jugadores_usuario ($jugadores_capturista);
 
 				nombre_jugador: {
 					required: "Campo obligatorio."
+				},
+
+				calle: {
+					required: "Campo Obligatorio"
+				},
+
+				numero: {
+					required: "Campo Obligatorio"
+				},
+
+				colonia: {
+					required: "Campo Obligatorio"
+				},
+
+				cp: {
+					required: "Campo Obligatorio"
+				},
+
+				telefono: {
+					required: "Campo Obligatorio"
+				},
+
+				seccion: {
+					required: "Campo Obligatorio"
+				},
+
+				fecha_nacimiento: {
+					required: "Campo Obligatorio"
+				},
+
+				movilizador: {
+					required: "Campo Obligatorio"
+				},
+
+				seccional: {
+					required: "Campo Obligatorio"
+				},
+
+				zonal: {
+					required: "Campo Obligatorio"
 				},
 
 	            porcen: {
