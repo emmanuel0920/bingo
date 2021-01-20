@@ -293,7 +293,7 @@
     							    <div class="col-md-4 inputGroupContainer">
     									<div class="input-group">
 											<select name="seccional" id="seccional" class="chosen-select form-control" type="text">
-												<option value="">Selecciona una Opción</option>
+												<option value="0">Selecciona una Opción</option>
 													<?php echo $select_seccional;?>
 											</select>
 											<span class="input-group-addon"><i class="fa fa-user"></i></span>
@@ -358,7 +358,7 @@
                                    <label class="col-md-5 control-label">Porcentaje</label>
                                     <div class="col-md-7 inputGroupContainer">
                                         <div class="input-group">
-                                            <input name="porcen" id="porcen" placeholder="Porcentaje" class="form-control" type="number" min="0" max="100" >
+                                            <input name="porcen" id="porcen" placeholder="Porcentaje" class="form-control" value="0" type="number" min="0" max="100" >
                                             <span class="input-group-addon"><i class="fa fa-percent"></i></span>
                                         </div>
                                     </div>

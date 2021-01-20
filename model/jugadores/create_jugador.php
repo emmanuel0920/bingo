@@ -1,6 +1,9 @@
 <?php
 include('../../controller/jugadores/funciones_jugadores.php');
 include('../../controller/funciones.php');
+
+$make_mov = $voto = 0;
+
 $nombre = $_POST['nombre_jugador'];
 $a_paterno = $_POST['a_paterno'];
 $a_materno = $_POST['a_materno'];
@@ -15,13 +18,20 @@ $id_seccional = $_POST['seccional'];
 $id_zonal = $_POST['zonal'];
 $a_quien = $_POST['a_quien'];
 $posibilidad = $_POST['porcen'];
-$make_mov = $_POST['make_mov'];
 $edad_jugador = $_POST['edad_jugador'];
 $fecha_nacimiento = $_POST['fecha_nacimiento'];
 $movilizador = $_POST['movilizador'];
 $observaciones = $_POST['observaciones'];
 $identificador = $_POST['identificador'];
-$voto = $_POST['voto'];
+
+if (isset($_POST['voto'])) {
+	$voto = 1;
+}
+
+if (isset($_POST['make_mov'])) {
+	$make_mov = 1;
+}
+
 if($make_mov == 1){
 	$completo = $nombre.' '.$a_paterno.' '.$a_materno;
 	create_movilizador($completo);
