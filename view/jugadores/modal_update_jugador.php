@@ -5,7 +5,7 @@
   $select_movilizador = fill_movilizador();
   $select_seccional = fill_select_seccional();
   $select_zonal = fill_select_zonal();
-
+  // var_dump($_POST);
   $id = $_POST['id'];
   $paterno = $_POST['paterno'];
   $materno = $_POST['materno'];
@@ -13,6 +13,12 @@
   $calle = $_POST['calle'];
   $numero = $_POST['numero'];
   $cp = $_POST['cp'];
+  $telefono = $_POST['telefono'];
+  $fecha_nacimiento = $_POST['fecha_nacimiento'];
+  $edad = $_POST['edad'];
+  $movilizador = $_POST['movilizador'];
+  $seccional = $_POST['seccional'];
+  $zonal = $_POST['zonal'];
   $colonia = $_POST['colonia'];
   $seccion = $_POST['seccion'];
   $fecha_captura = $_POST['fecha_captura'];
@@ -123,7 +129,7 @@
                          <label class="col-md-5 control-label">Número<FONT COLOR="red">*</FONT></label>
                           <div class="col-md-7 inputGroupContainer">
                           <div class="input-group">
-                            <input name="numero" id="numero" placeholder="Número" class="form-control" type="number"  >
+                            <input value="<?=$numero;?>" name="numero" id="numero" placeholder="Número" class="form-control" type="number"  >
                             <span class="input-group-addon"><i class="fa fa-hashtag"></i></span>
                           </div>
                         </div>
@@ -149,7 +155,7 @@
                          <label class="col-md-5 control-label">Código Postal<FONT COLOR="red">*</FONT></label>
                           <div class="col-md-7 inputGroupContainer">
                           <div class="input-group">
-                            <input name="cp" id="cp" placeholder="Código Postal" class="form-control" type="text">
+                            <input value="<?=$cp;?>" name="cp" id="cp" placeholder="Código Postal" class="form-control" type="text">
                             <span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
                           </div>
                         </div>
@@ -161,7 +167,7 @@
                          <label class="col-md-5 control-label">Teléfono<FONT COLOR="red"></FONT></label>
                           <div class="col-md-7 inputGroupContainer">
                           <div class="input-group">
-                            <input  name="telefono" id="telefono" placeholder="Teléfono" class="form-control" type="number">
+                            <input value="<?=$telefono;?>" name="telefono" id="telefono" placeholder="Teléfono" class="form-control" type="number">
                             <span class="input-group-addon"><i class="fa fa-phone"></i></span>
                           </div>
                         </div>
@@ -191,7 +197,7 @@
                      <label class="col-md-5 control-label">Fecha de Nacimiento<FONT COLOR="red">*</FONT></label>
                       <div class="col-md-7 inputGroupContainer">
                       <div class="input-group">
-                          <input type="date" class="form-control" name="fecha_nacimiento" id="fecha_nacimiento" onchange="age_calculator()">
+                          <input value="<?=$fecha_nacimiento;?>" type="date" class="form-control" name="fecha_nacimiento" id="fecha_nacimiento" onchange="age_calculator()">
                           <span class="input-group-addon"><i class="ace-icon fa fa-calendar"></i></span>
                       </div>
                     </div>
@@ -206,7 +212,7 @@
                      <label class="col-md-5 control-label">Edad</label>
                       <div class="col-md-7 inputGroupContainer">
                       <div class="input-group">
-                        <input name="edad_jugador" id="edad_jugador" placeholder="Edad" class="form-control" type="number" onchange="date_calculator()">
+                        <input value="<?=$edad;?>" name="edad_jugador" id="edad_jugador" placeholder="Edad" class="form-control" type="number" onchange="date_calculator()">
                         <span class="input-group-addon"><i class="fa fa-hashtag"></i></span>
                       </div>
                     </div>
