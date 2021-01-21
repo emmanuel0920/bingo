@@ -2,7 +2,6 @@
   
   include('../../model/jugadores/fill.php');
 
- 
   // var_dump($_POST);
   $id = $_POST['id'];
   $paterno = $_POST['paterno'];
@@ -10,15 +9,19 @@
   $nombre = $_POST['nombre'];
   $calle = $_POST['calle'];
   $numero = $_POST['numero'];
+  $colonia = $_POST['colonia'];
   $cp = $_POST['cp'];
   $telefono = $_POST['telefono'];
+  $seccion = $_POST['seccion'];
   $fecha_nacimiento = $_POST['fecha_nacimiento'];
   $edad = $_POST['edad'];
   $movilizador = $_POST['movilizador'];
   $seccional = $_POST['seccional'];
   $zonal = $_POST['zonal'];
-  $colonia = $_POST['colonia'];
-  $seccion = $_POST['seccion'];
+  $voto = $_POST['voto'];
+  $a_quien = $_POST['a_quien'];
+  $posibilidad = $_POST['posibilidad'];
+  $observaciones = $_POST['observaciones'];
   $fecha_captura = $_POST['fecha_captura'];
   $identificador = $_POST['identificador'];
   $ruta = "../../assets/evidencias/".$identificador."/";
@@ -72,6 +75,20 @@
           <fieldset>
 
             <input type="hidden" name="id" id="id" value="<?=$id;?>">
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                     <label class="col-md-5 control-label">Identificador<FONT COLOR="red">*</FONT></label>
+                      <div class="col-md-7 inputGroupContainer">
+                      <div class="input-group">
+                        <input value="<?=$identificador?>" name="identificador" id="identificador" placeholder="Identificador" class="form-control" type="text">
+                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
 
             <div class="row">
               <div class="col-md-6">
@@ -279,7 +296,7 @@
                       <div class="input-group">
                         <div class="radio">
                             <label>
-                              <input type="checkbox" name="voto" id="voto" value="0" onchange="check_value(this.id);">
+                              <input type="checkbox" name="voto" id="voto" value="<?=$voto;?>" onchange="check_value(this.id);">
                             </label>
                           </div>
                       </div>
@@ -292,7 +309,7 @@
                    <label class="col-md-5 control-label">¿A quién?</label>
                     <div class="col-md-7 inputGroupContainer">
                         <div class="input-group">
-                            <input name="a_quien" id="a_quien" placeholder="A quién" class="form-control" type="text">
+                            <input name="a_quien" id="a_quien" placeholder="A quién" value="<?=$a_quien;?>" class="form-control" type="text">
                             <span class="input-group-addon"><i class="fa fa-flag"></i></span>
                         </div>
                     </div>
@@ -306,14 +323,14 @@
                    <label class="col-md-5 control-label">Porcentaje</label>
                     <div class="col-md-7 inputGroupContainer">
                         <div class="input-group">
-                            <input name="porcen" id="porcen" placeholder="Porcentaje" class="form-control" type="number" min="0" max="100" >
+                            <input value="<?=$posibilidad;?>" name="porcen" id="porcen" placeholder="Porcentaje" class="form-control" type="number" min="0" max="100" >
                             <span class="input-group-addon"><i class="fa fa-percent"></i></span>
                         </div>
                     </div>
                 </div>
               </div>
 
-              <div class="col-md-6">
+              <!-- <div class="col-md-6">
                 <div class="form-group">
                    <label class="col-md-5 control-label">¿Hacer Movilizador?</label>
                     <div class="col-md-7 inputGroupContainer">
@@ -326,7 +343,7 @@
                         </div>
                     </div>
                 </div>
-              </div>
+              </div> -->
             </div>  
 
             <div class="row">
@@ -335,7 +352,7 @@
                      <label class="col-md-2 control-label">Observaciones<FONT COLOR="red"></FONT></label>
                       <div class="col-md-9 inputGroupContainer">
                       <div class="input-group">
-                        <textarea name="observaciones" id="observaciones" placeholder="Observaciones" class="form-control" ></textarea>
+                        <textarea name="observaciones" id="observaciones" placeholder="Observaciones" class="form-control"><?=$observaciones;?></textarea>
                         <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
                       </div>
                     </div>
