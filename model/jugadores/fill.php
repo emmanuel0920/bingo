@@ -30,12 +30,12 @@ function fill_seccional($seccion)
 
 function fill_select_movilizador()
 {
-    $movilizadores = get_movilizadores();
+    $movilizadores = get_movilizador();
     $select_movilizador = '';
     foreach($movilizadores as $movilizador)
     {
         $select_movilizador.='
-                <option value="'.$movilizador['id_usuario'].'">'.$movilizador['nombre_usuario'].'</option>
+                <option value="'.$movilizador['id'].'">'.$movilizador['nombre'].'</option>
         ';
     }
     
@@ -65,6 +65,68 @@ function fill_select_zonal()
         $select_zonal.='
                 <option value="'.$zonal['id'].'">'.$zonal['nombre'].'-'.$zonal['seccion'].'</option>
         ';
+    }
+    
+    return $select_zonal;
+}
+
+function fill_movilizador_update($mov)
+{
+    $movilizadores = get_movilizador();
+    $select_movilizador = '';
+    foreach($movilizadores as $movilizador)
+    {
+        if($mov == $movilizador['id'])
+        {
+            $select_movilizador.='
+                    <option value="'.$movilizador['id'].'" selected>'.$movilizador['nombre'].'</option>
+            ';
+        }else{
+            $select_movilizador.='
+                    <option value="'.$movilizador['id'].'">'.$movilizador['nombre'].'</option>
+            ';
+        }
+    }
+    
+    return $select_movilizador;
+}
+
+function fill_select_seccional_update($sec)
+{
+    $seccionales = get_seccionales();
+    $select_seccional = '';
+    foreach($seccionales as $seccional)
+    {
+        if($sec == $seccional['id']){
+            $select_seccional.='
+                <option value="'.$seccional['id'].'" selected>'.$seccional['nombre'].'</option>
+        ';
+        }else{            
+        $select_seccional.='
+                <option value="'.$seccional['id'].'">'.$seccional['nombre'].'</option>
+        ';
+        }
+    }
+    
+    return $select_seccional;
+}
+
+function fill_select_zonal_update($zon)
+{
+    $zonales = get_zonales();
+    $select_zonal = '';
+    foreach($zonales as $zonal)
+    {
+        if($zon == $zonal['id'])
+        {
+            $select_zonal.='
+                <option value="'.$zonal['id'].'" selected>'.$zonal['nombre'].'-'.$zonal['seccion'].'</option>
+            ';
+        }else{
+            $select_zonal.='
+                <option value="'.$zonal['id'].'">'.$zonal['nombre'].'-'.$zonal['seccion'].'</option>
+            ';
+        }
     }
     
     return $select_zonal;

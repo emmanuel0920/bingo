@@ -18,12 +18,13 @@ function fill_tr_jugadores_usuario ($jugadores_capturista)
 	{
 	    if(!$jugador_capturista['existente'])
 	    {
-	        $fondo= " style='background-color:#de4848 !important;'";
+	        $fondo ="";
+	        // $fondo= " style='background-color:#de4848 !important;'";
 	    }else{
 	        $fondo ="";
 	    }
 	    
-	    $datos_modal= "'".$jugador_capturista['a_paterno']."'" .','. "'".$jugador_capturista['a_materno']."'" .','. "'".$jugador_capturista['nombre']."'" .','. "'".$jugador_capturista['calle']."'" .','. $jugador_capturista['numero'] .','. "'".$jugador_capturista['colonia']."'" .','. $jugador_capturista['c_p'] .','. "'".$jugador_capturista['seccion']."'" .','."'".$jugador_capturista['fecha_captura']."', '".$jugador_capturista['identificador']."', '".$jugador_capturista['id']."'";
+	    $datos_modal= "'".$jugador_capturista['a_paterno']."'" .','. "'".$jugador_capturista['a_materno']."'" .','. "'".$jugador_capturista['nombre']."'" .','. "'".$jugador_capturista['calle']."'" .','. $jugador_capturista['numero'] .','. "'".$jugador_capturista['colonia']."'" .','. $jugador_capturista['c_p'] .','. "'".$jugador_capturista['telefono']."'" .','. "'".$jugador_capturista['seccion']."'" .','. "'".$jugador_capturista['fecha_nacimiento']."'" .','. "'".$jugador_capturista['edad']."'" .','. "'".$jugador_capturista['id_movilizador']."'" .','. "'".$jugador_capturista['id_seccional']."'" .','. "'".$jugador_capturista['id_zonal']."'" .','. "'".$jugador_capturista['fecha_captura']." ',' ".$jugador_capturista['identificador']."', '".$jugador_capturista['id']."'";
 
 	 	$tr_jugadores_capturista.='<tr'.$fondo.' >
 										<td>'.$jugador_capturista['a_paterno'].'</td>

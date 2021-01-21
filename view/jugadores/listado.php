@@ -6,7 +6,6 @@ $jugadores_capturista= fill_jugadores_usuario($_SESSION['id_usuario']);
 
 $tr_jugadores = fill_tr_jugadores_usuario ($jugadores_capturista);
 
-
 ?>
 
 <div class="breadcrumbs ace-save-state breadcrumbs-fixed" id="breadcrumbs">
@@ -100,6 +99,46 @@ $tr_jugadores = fill_tr_jugadores_usuario ($jugadores_capturista);
 					required: true
 				},
 
+				calle: {
+					required: true
+				},
+
+				numero: {
+					required: true
+				},
+
+				colonia: {
+					required: true
+				},
+
+				cp: {
+					required: true
+				},
+
+				telefono: {
+					required: true
+				},
+
+				seccion: {
+					required: true
+				},
+
+				fecha_nacimiento: {
+					required: true
+				},
+
+				movilizador: {
+					required: true
+				},
+
+				seccional: {
+					required: true
+				},
+
+				zonal: {
+					required: true
+				},
+
 	            porcen: {
 	                min: 0,
 	                max: 100
@@ -114,6 +153,46 @@ $tr_jugadores = fill_tr_jugadores_usuario ($jugadores_capturista);
 
 				nombre_jugador: {
 					required: "Campo obligatorio."
+				},
+
+				calle: {
+					required: "Campo Obligatorio"
+				},
+
+				numero: {
+					required: "Campo Obligatorio"
+				},
+
+				colonia: {
+					required: "Campo Obligatorio"
+				},
+
+				cp: {
+					required: "Campo Obligatorio"
+				},
+
+				telefono: {
+					required: "Campo Obligatorio"
+				},
+
+				seccion: {
+					required: "Campo Obligatorio"
+				},
+
+				fecha_nacimiento: {
+					required: "Campo Obligatorio"
+				},
+
+				movilizador: {
+					required: "Campo Obligatorio"
+				},
+
+				seccional: {
+					required: "Campo Obligatorio"
+				},
+
+				zonal: {
+					required: "Campo Obligatorio"
 				},
 
 	            porcen: {
@@ -213,7 +292,7 @@ $tr_jugadores = fill_tr_jugadores_usuario ($jugadores_capturista);
 	}	
 
 	//JQUERY AJAX
-	function modal_update_jugador_foto(paterno, materno, nombre, calle, numero, colonia, cp, seccion, fecha_captura,identificador, id){
+	function modal_update_jugador_foto(paterno, materno, nombre, calle, numero, colonia, cp, telefono, seccion, fecha_nacimiento, edad, movilizador, seccional, zonal, fecha_captura,identificador, id){
         var xmlhttp;
 
         if (window.XMLHttpRequest){
@@ -239,7 +318,7 @@ $tr_jugadores = fill_tr_jugadores_usuario ($jugadores_capturista);
             }
         }
 
-        var datos_modal = "paterno="+paterno + "&materno="+materno + "&nombre="+nombre + "&calle="+calle + "&numero="+numero + "&colonia="+colonia + "&cp="+cp + "&seccion="+seccion + "&fecha_captura="+fecha_captura+"&identificador="+identificador+"&id="+id;
+        var datos_modal = "paterno="+paterno + "&materno="+materno + "&nombre="+nombre + "&calle="+calle + "&numero="+numero + "&colonia="+colonia + "&cp="+cp + "&telefono="+telefono + "&seccion="+seccion + "&fecha_nacimiento="+fecha_nacimiento + "&edad="+edad + "&movilizador="+movilizador + "&seccional="+seccional + "&zonal="+zonal + "&fecha_captura="+fecha_captura+"&identificador="+identificador+"&id="+id;
 
         waitingDialog.show('Cargando Información', {dialogSize: 'sm', progressType: 'warning'})
         xmlhttp.open("POST","./view/jugadores/modal_update_jugador.php",true);
