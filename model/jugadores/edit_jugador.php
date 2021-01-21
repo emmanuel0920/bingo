@@ -32,7 +32,7 @@ if (isset($_POST['voto'])) {
 	$voto = 1;
 }
 
-	if(update_jugador($id, $nombre, $a_paterno, $a_materno, $calle, $numero, $colonia, $cp, $telefono, $seccion, $casilla, $id_seccional, $id_zonal, $posibilidad, $a_quien, $edad_jugador, $fecha_nacimiento, $movilizador, $observaciones))
+	if(update_jugador($id, $nombre, $a_paterno, $a_materno, $calle, $numero, $colonia, $cp, $telefono, $seccion, $casilla, $id_seccional, $id_zonal, $voto, $posibilidad, $a_quien, $edad_jugador, $fecha_nacimiento, $movilizador, $observaciones))
 	{
 	    $mensaje = "correcto";
 	}else

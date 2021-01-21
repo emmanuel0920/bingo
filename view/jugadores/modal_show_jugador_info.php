@@ -8,6 +8,12 @@
   $calle = $_POST['calle'];
   $numero = $_POST['numero'];
   $cp = $_POST['cp'];
+  $telefono = $_POST['telefono'];
+  $fecha_nacimiento = $_POST['fecha_nacimiento'];
+  $edad = $_POST['edad'];
+  $movilizador = $_POST['movilizador'];
+  $seccional = $_POST['seccional'];
+  $zonal = $_POST['zonal'];
   $colonia = $_POST['colonia'];
   $seccion = $_POST['seccion'];
   $fecha_captura = $_POST['fecha_captura'];
@@ -49,6 +55,11 @@
         <table class="table">
           <tbody>
             <tr>
+              <td>Identificador: </td>
+              <td><?=$identificador?></td>
+            </tr>
+
+            <tr>
               <td>Apellido Paterno: </td>
               <td><?=$paterno?></td>
             </tr>
@@ -84,8 +95,63 @@
             </tr>
 
             <tr>
+              <td>Teléfono: </td>
+              <td><?=$telefono?></td>
+            </tr>
+
+            <tr>
               <td>Sección: </td>
               <td><?=$seccion?></td>
+            </tr>
+
+            <tr>
+              <td>Fecha de Nacimiento: </td>
+              <td><?=$fecha_nacimiento?></td>
+            </tr>
+
+            <tr>
+              <td>Edad: </td>
+              <td><?=$edad?></td>
+            </tr>
+
+            <tr>
+              <td>Movilizador: </td>
+              <td><?=$movilizador?></td>
+            </tr>
+
+            <tr>
+              <td>Seccional: </td>
+              <td><?=$seccional?></td>
+            </tr>
+
+            <tr>
+              <td>Zonal: </td>
+              <td><?=$zonal?></td>
+            </tr>
+
+            <tr>
+              <td>¿Votó?: </td>
+              <td><?=$voto?></td>
+            </tr>
+
+            <tr>
+              <td>¿A quién?: </td>
+              <td><?=$a_quien?></td>
+            </tr>
+
+            <tr>
+              <td>Porgentaje: </td>
+              <td><?=$porcentaje?></td>
+            </tr>
+
+            <tr>
+              <td>¿Hacer Movilizador?: </td>
+              <td><?=$zonal?></td>
+            </tr>
+
+            <tr>
+              <td>Observaciones: </td>
+              <td><?=$observaciones?></td>
             </tr>
 
             <tr>
