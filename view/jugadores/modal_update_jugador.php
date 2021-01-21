@@ -2,9 +2,7 @@
   
   include('../../model/jugadores/fill.php');
 
-  $select_movilizador = fill_movilizador();
-  $select_seccional = fill_select_seccional();
-  $select_zonal = fill_select_zonal();
+ 
   // var_dump($_POST);
   $id = $_POST['id'];
   $paterno = $_POST['paterno'];
@@ -39,6 +37,11 @@
       }
     }
   }
+
+
+  $select_movilizador = fill_movilizador_update($movilizador);
+  $select_seccional = fill_select_seccional_update($seccional);
+  $select_zonal = fill_select_zonal_update($zonal);
 ?>
 
 <style type="text/css">
