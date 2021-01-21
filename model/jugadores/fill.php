@@ -30,12 +30,12 @@ function fill_seccional($seccion)
 
 function fill_select_movilizador()
 {
-    $movilizadores = get_movilizadores();
+    $movilizadores = get_movilizador();
     $select_movilizador = '';
     foreach($movilizadores as $movilizador)
     {
         $select_movilizador.='
-                <option value="'.$movilizador['id_usuario'].'">'.$movilizador['nombre_usuario'].'</option>
+                <option value="'.$movilizador['id'].'">'.$movilizador['nombre'].'</option>
         ';
     }
     
@@ -72,18 +72,18 @@ function fill_select_zonal()
 
 function fill_movilizador_update($mov)
 {
-    $movilizadores = get_movilizadores();
+    $movilizadores = get_movilizador();
     $select_movilizador = '';
     foreach($movilizadores as $movilizador)
     {
-        if($mo == $movilizador['id_usuario'])
+        if($mov == $movilizador['id'])
         {
             $select_movilizador.='
-                    <option value="'.$movilizador['id_usuario'].'" selected>'.$movilizador['nombre_usuario'].'</option>
+                    <option value="'.$movilizador['id'].'" selected>'.$movilizador['nombre'].'</option>
             ';
         }else{
             $select_movilizador.='
-                    <option value="'.$movilizador['id_usuario'].'">'.$movilizador['nombre_usuario'].'</option>
+                    <option value="'.$movilizador['id'].'">'.$movilizador['nombre'].'</option>
             ';
         }
     }
@@ -117,7 +117,7 @@ function fill_select_zonal_update($zon)
     $select_zonal = '';
     foreach($zonales as $zonal)
     {
-        if($zon == $zonal)
+        if($zon == $zonal['id'])
         {
             $select_zonal.='
                 <option value="'.$zonal['id'].'" selected>'.$zonal['nombre'].'-'.$zonal['seccion'].'</option>
