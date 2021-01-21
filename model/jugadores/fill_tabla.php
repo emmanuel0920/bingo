@@ -18,7 +18,8 @@ function fill_tr_jugadores_usuario ($jugadores_capturista)
 	{
 	    if(!$jugador_capturista['existente'])
 	    {
-	        $fondo= " style='background-color:#de4848 !important;'";
+	        $fondo ="";
+	        // $fondo= " style='background-color:#de4848 !important;'";
 	    }else{
 	        $fondo ="";
 	    }
