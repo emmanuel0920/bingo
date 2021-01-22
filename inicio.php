@@ -218,12 +218,12 @@
 						</li>
 
 
-						<li class="">
+						<!-- <li class="">
 							<a href="javascript:cambiarcont('view/mapeo/nuevo.php');">
 								<i class="menu-icon fa fa-user"></i>
 								<span class="menu-text"> Mapeo </span>
 							</a>
-						</li>
+						</li> -->
 
 					<?php } if($_SESSION['id_tipo_usuario']==2){ ?>
 
