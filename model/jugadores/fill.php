@@ -91,6 +91,21 @@ function fill_movilizador_update($mov)
     return $select_movilizador;
 }
 
+function fill_movilizador_show($mov)
+{
+    $movilizadores = get_movilizador();
+    $select_movilizador = '';
+    foreach($movilizadores as $movilizador)
+    {
+        if($mov == $movilizador['id'])
+        {
+            $select_movilizador = $movilizador['nombre'];
+        }
+    }
+    
+    return $select_movilizador;
+}
+
 function fill_select_seccional_update($sec)
 {
     $seccionales = get_seccionales();
@@ -105,6 +120,20 @@ function fill_select_seccional_update($sec)
         $select_seccional.='
                 <option value="'.$seccional['id'].'">'.$seccional['nombre'].'</option>
         ';
+        }
+    }
+    
+    return $select_seccional;
+}
+
+function fill_select_seccional_show($sec)
+{
+    $seccionales = get_seccionales();
+    $select_seccional = '';
+    foreach($seccionales as $seccional)
+    {
+        if($sec == $seccional['id']){
+            $select_seccional = $seccional['nombre'];
         }
     }
     
@@ -126,6 +155,21 @@ function fill_select_zonal_update($zon)
             $select_zonal.='
                 <option value="'.$zonal['id'].'">'.$zonal['nombre'].'-'.$zonal['seccion'].'</option>
             ';
+        }
+    }
+    
+    return $select_zonal;
+}
+
+function fill_select_zonal_show($zon)
+{
+    $zonales = get_zonales();
+    $select_zonal = '';
+    foreach($zonales as $zonal)
+    {
+        if($zon == $zonal['id'])
+        {
+            $select_zonal = $zonal['nombre'];
         }
     }
     

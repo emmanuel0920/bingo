@@ -7,15 +7,18 @@
   $nombre = $_POST['nombre'];
   $calle = $_POST['calle'];
   $numero = $_POST['numero'];
+  $colonia = $_POST['colonia'];
   $cp = $_POST['cp'];
   $telefono = $_POST['telefono'];
+  $seccion = $_POST['seccion'];
   $fecha_nacimiento = $_POST['fecha_nacimiento'];
   $edad = $_POST['edad'];
   $movilizador = $_POST['movilizador'];
   $seccional = $_POST['seccional'];
   $zonal = $_POST['zonal'];
-  $colonia = $_POST['colonia'];
-  $seccion = $_POST['seccion'];
+  $a_quien = $_POST['a_quien'];
+  $posibilidad = $_POST['posibilidad'];
+  $observaciones = $_POST['observaciones'];
   $fecha_captura = $_POST['fecha_captura'];
   $identificador = $_POST['identificador'];
   $ruta = "../../assets/evidencias/".$identificador."/";
@@ -35,9 +38,23 @@
     }
   }
 
+  if ($_POST['voto'] == 1) {
+    $voto = "Sí";
+  }else{
+    $voto = "No";
+  }
+
+  $select_movilizador = fill_movilizador_show($movilizador);
+  $select_seccional = fill_select_seccional_show($seccional);
+  $select_zonal = fill_select_zonal_show($zonal);
+
 ?>
 
-
+<style type="text/css">
+  tr:nth-child(odd){
+    background: #e7e5e5;
+  }
+</style>
 
 <div class="modal fade" tabindex="-1" role="dialog" id="modal_show_jugador_info" style="overflow-y: auto;">
   <div class="modal-dialog modal-lg">
@@ -116,17 +133,17 @@
 
             <tr>
               <td>Movilizador: </td>
-              <td><?=$movilizador?></td>
+              <td><?=$select_movilizador?></td>
             </tr>
 
             <tr>
               <td>Seccional: </td>
-              <td><?=$seccional?></td>
+              <td><?=$select_seccional?></td>
             </tr>
 
             <tr>
               <td>Zonal: </td>
-              <td><?=$zonal?></td>
+              <td><?=$select_zonal?></td>
             </tr>
 
             <tr>
@@ -140,14 +157,14 @@
             </tr>
 
             <tr>
-              <td>Porgentaje: </td>
-              <td><?=$porcentaje?></td>
+              <td>Porcentaje: </td>
+              <td><?=$posibilidad?></td>
             </tr>
 
-            <tr>
+            <!-- <tr>
               <td>¿Hacer Movilizador?: </td>
-              <td><?=$zonal?></td>
-            </tr>
+              <td><?=$make_mov?></td>
+            </tr> -->
 
             <tr>
               <td>Observaciones: </td>

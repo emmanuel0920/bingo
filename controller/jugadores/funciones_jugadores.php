@@ -106,9 +106,9 @@ function get_jugador($id)
     return $result;
 }
 
-function update_jugador($id, $nombre, $a_paterno, $a_materno, $calle, $numero, $colonia, $cp, $telefono, $seccion, $casilla, $id_seccional, $id_zonal, $voto, $posibilidad, $a_quien, $edad_jugador, $fecha_nacimiento, $movilizador, $observaciones)
+function update_jugador($id, $nombre, $a_paterno, $a_materno, $calle, $numero, $colonia, $cp, $telefono, $seccion, $casilla, $id_seccional, $id_zonal, $voto, $posibilidad, $a_quien, $edad_jugador, $fecha_nacimiento, $movilizador, $observaciones, $identificador)
 {
-    $sql = "UPDATE jugadores SET nombre = '".$nombre."', a_paterno = '".$a_paterno."',a_materno = '".$a_materno."', calle = '".$calle."', numero = '".$numero."', colonia = '".$colonia."', c_p = '".$cp."', telefono = '".$telefono."', seccion = '".$seccion."', casilla = '".$casilla."', id_seccional = '".$id_seccional."', id_zonal = '".$id_zonal."', voto = '".$voto."', posibilidad = '".$posibilidad."', a_quien = '".$a_quien."', edad = '".$edad_jugador."', fecha_nacimiento = '".$fecha_nacimiento."', id_movilizador = '".$movilizador."', observaciones ='".$observaciones.
+    $sql = "UPDATE jugadores SET nombre = '".$nombre."', a_paterno = '".$a_paterno."',a_materno = '".$a_materno."', calle = '".$calle."', numero = '".$numero."', colonia = '".$colonia."', c_p = '".$cp."', telefono = '".$telefono."', seccion = '".$seccion."', casilla = '".$casilla."', id_seccional = '".$id_seccional."', id_zonal = '".$id_zonal."', voto = '".$voto."', posibilidad = '".$posibilidad."', a_quien = '".$a_quien."', edad = '".$edad_jugador."', fecha_nacimiento = '".$fecha_nacimiento."', id_movilizador = '".$movilizador."', observaciones ='".$observaciones."', identificador ='".$identificador.
             "' WHERE id = $id";
 
     $result = querys($sql);

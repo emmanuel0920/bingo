@@ -346,7 +346,7 @@ $tr_jugadores = fill_tr_jugadores_usuario ($jugadores_capturista);
         xmlhttp.send(datos_modal);
     }
 
-    function modal_show_jugador_info(paterno, materno, nombre, calle, numero, colonia, cp, telefono, seccion, fecha_nacimiento, edad, movilizador, seccional, zonal, fecha_captura,identificador){
+    function modal_show_jugador_info(paterno, materno, nombre, calle, numero, colonia, cp, telefono, seccion, fecha_nacimiento, edad, movilizador, seccional, zonal, voto, a_quien, posibilidad, observaciones, fecha_captura,identificador){
         var xmlhttp;
 
         if (window.XMLHttpRequest){
@@ -369,7 +369,7 @@ $tr_jugadores = fill_tr_jugadores_usuario ($jugadores_capturista);
             }
         }
 
-       var datos_modal = "paterno="+paterno + "&materno="+materno + "&nombre="+nombre + "&calle="+calle + "&numero="+numero + "&colonia="+colonia + "&cp="+cp + "&telefono="+telefono + "&seccion="+seccion + "&fecha_nacimiento="+fecha_nacimiento + "&edad="+edad + "&movilizador="+movilizador + "&seccional="+seccional + "&zonal="+zonal + "&fecha_captura="+fecha_captura+"&identificador="+identificador;
+       var datos_modal = "paterno="+paterno + "&materno="+materno + "&nombre="+nombre + "&calle="+calle + "&numero="+numero + "&colonia="+colonia + "&cp="+cp + "&telefono="+telefono + "&seccion="+seccion + "&fecha_nacimiento="+fecha_nacimiento + "&edad="+edad + "&movilizador="+movilizador + "&seccional="+seccional + "&zonal="+zonal + "&voto="+voto + "&a_quien="+a_quien + "&posibilidad="+posibilidad + "&observaciones="+observaciones + "&fecha_captura="+fecha_captura+"&identificador="+identificador;
 
         waitingDialog.show('Cargando Información', {dialogSize: 'sm', progressType: 'warning'})
         xmlhttp.open("POST","./view/jugadores/modal_show_jugador_info.php",true);
